@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1'
+HD_PWD='U:/Desktop/ECE437SP20200/lab5/lab5.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

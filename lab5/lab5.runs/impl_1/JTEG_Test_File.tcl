@@ -70,14 +70,14 @@ set rc [catch {
   create_project -in_memory -part xc7a75tfgg484-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir U:/Desktop/ECE437SP2020/lab5/lab5.cache/wt [current_project]
-  set_property parent.project_path U:/Desktop/ECE437SP2020/lab5/lab5.xpr [current_project]
-  set_property ip_output_repo U:/Desktop/ECE437SP2020/lab5/lab5.cache/ip [current_project]
+  set_property webtalk.parent_dir U:/Desktop/ECE437SP20200/lab5/lab5.cache/wt [current_project]
+  set_property parent.project_path U:/Desktop/ECE437SP20200/lab5/lab5.xpr [current_project]
+  set_property ip_output_repo U:/Desktop/ECE437SP20200/lab5/lab5.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet U:/Desktop/ECE437SP2020/lab5/lab5.runs/synth_1/JTEG_Test_File.dcp
-  read_ip -quiet U:/Desktop/ECE437SP2020/lab5/lab5.srcs/sources_1/ip/ila_0/ila_0.xci
-  read_xdc {{U:/Desktop/ECE437SP2020/lab5/lab5.srcs/constrs_1/imports/ECE 437/xem7310_v1.xdc}}
+  add_files -quiet U:/Desktop/ECE437SP20200/lab5/lab5.runs/synth_1/JTEG_Test_File.dcp
+  read_ip -quiet U:/Desktop/ECE437SP20200/lab5/lab5.srcs/sources_1/ip/ila_0/ila_0.xci
+  read_xdc {{U:/Desktop/ECE437SP20200/lab5/lab5.srcs/constrs_1/imports/ECE 437/xem7310_v1.xdc}}
   link_design -top JTEG_Test_File -part xc7a75tfgg484-1
   close_msg_db -file init_design.pb
 } RESULT]

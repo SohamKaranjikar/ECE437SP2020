@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{U:/Desktop/ECE437SP2020/lab5/lab5.srcs/constrs_1/imports/ECE 437/xem7310_v1.xdc} rfile:{../../../lab5.srcs/constrs_1/imports/ECE 437/xem7310_v1.xdc} id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{U:/Desktop/ECE437SP20200/lab5/lab5.srcs/constrs_1/imports/ECE 437/xem7310_v1.xdc} rfile:{../../../lab5.srcs/constrs_1/imports/ECE 437/xem7310_v1.xdc} id:1} [current_design]
 set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y19 [get_ports {okHU[0]}]
 set_property src_info {type:XDC file:1 line:19 export:INPUT save:INPUT read:READ} [current_design]

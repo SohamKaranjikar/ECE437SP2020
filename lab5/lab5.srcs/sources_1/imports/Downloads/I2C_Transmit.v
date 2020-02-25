@@ -36,6 +36,7 @@ module I2C_Transmit(
     reg repeat_start_bit;
     reg reloop_start_bit;
     reg read_lsb;
+    reg loop_done;
     reg [7:0] MSB_ADDR = 8'd0;
     reg [7:0] LSB_ADDR = 8'd1;
     reg [3:0] count;
@@ -59,6 +60,8 @@ module I2C_Transmit(
         repeat_start_bit = 1'b0;
         reloop_start_bit = 1'b0;
         count = 4'd0;
+        loop_done = 1'b0;
+        State = STATE_INIT;
     end
     
     always @(*) begin
@@ -84,11 +87,12 @@ module I2C_Transmit(
             // This is the Start sequence            
             8'd1 : begin
                   SCL <= 1'b1;
-                  if(reloop_start_bit == 1'b1) begin
-                    Temp_MSByte = 8'd0;
-                    Temp_LSByte = 8'd0;
-                  end
                   SDA <= 1'b0;
+                  if(loop_done == 1'b1) begin
+                      Temp_MSByte <= 8'd0;
+                      Temp_LSByte <= 8'd0;
+                      loop_done = 1'b0;
+                  end
                   State <= State + 1'b1;                                
             end   
             
@@ -1012,14 +1016,9 @@ module I2C_Transmit(
                      
             8'd169 : begin
                   SCL <= 1'b1;
-                  if(count<4'd10) begin
-                    State <= 1'd1;
-                    repeat_start_bit <= 1'b0;
-                    count <= count + 1'd1;
-                  end
-                  else begin
-                    State <= STATE_INIT;
-                  end             
+                  State <= 1'd1;
+                  repeat_start_bit <= 1'b0;
+                  loop_done = 1'b1;
             end
             
             //If the FSM ends up in this state, there was an error in teh FSM code

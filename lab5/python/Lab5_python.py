@@ -55,14 +55,28 @@ print("----------------------------------------------------")
 #time.sleep(0.5)                 
 
 # First recieve data from the FPGA by using UpdateWireOuts
+count = 0;
+average = 0;
 while(1):
-    time.sleep(2)
+    time.sleep(.02)
     dev.UpdateWireOuts()
     Final_Temp = dev.GetWireOutValue(0x20)  # Transfer the recived data in result_sum variable
     # convert number into binary first
     
+    if((float(Final_Temp)/16.0) == 0.0):
+        continue
+    elif(count == 0):
+        average = (float(Final_Temp)/16.0)
+        count = count + 1;
+    else:
+        average = (average+(float(Final_Temp)/16.0))/2;
+        count = count + 1;
     
-    print("The temperature is " + str(float(Final_Temp)/16.0))
+    if(count == 50):
+        print("The temperature is: "+str(average))
+        average = 0
+        count = 0
+        
     
 
 dev.Close

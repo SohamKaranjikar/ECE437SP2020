@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="U:/Desktop/ECE437SP2020/lab5/lab5.xpr">
+<Project Version="7" Minor="39" Path="U:/Desktop/ECE437SP20200/lab5/lab5.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="26676eb0ecc0472c9b0eed4e0bf94d5f"/>
