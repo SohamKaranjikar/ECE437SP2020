@@ -1,0 +1,111 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 24 09:57:11 2020
+# Process ID: 9192
+# Current directory: U:/Desktop/ECE437SP2020/lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9248 U:\Desktop\ECE437SP2020\lab5\lab5.xpr
+# Log file: U:/Desktop/ECE437SP2020/lab5/vivado.log
+# Journal file: U:/Desktop/ECE437SP2020/lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/Desktop/ECE437SP2020/lab5/lab5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1125.516 ; gain = 302.824
+update_compile_order -fileset sources_1
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1136.684 ; gain = 0.000
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/00001b3b91ac01]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Xilinx/00001b3b91ac01]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00001b3b91ac01
+set_property PROGRAM.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a75t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2078.742 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-24 10:04:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-24 10:05:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file U:/Desktop/ECE437SP2020/lab5/lab5.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Feb 24 10:15:19 2020] Launched synth_1...
+Run output will be captured here: U:/Desktop/ECE437SP2020/lab5/lab5.runs/synth_1/runme.log
+[Mon Feb 24 10:15:19 2020] Launched impl_1...
+Run output will be captured here: U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 560 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a75tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.793 . Memory (MB): peak = 2734.559 ; gain = 3.703
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.795 . Memory (MB): peak = 2734.559 ; gain = 3.703
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2734.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 286 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 164 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 34 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 38 instances
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 8 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 10 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
+
+open_run: Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 2844.188 ; gain = 765.445
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-24 10:22:43
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-24 10:22:47
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+set_property PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2910.285 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-24 10:25:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-24 10:25:17
+INFO: [Labtools 27-3304] ILA Waveform data saved to file U:/Desktop/ECE437SP2020/lab5/lab5.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.

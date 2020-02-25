@@ -1,0 +1,1007 @@
+
+*** Running vivado
+    with args -log lab2_example.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source lab2_example.tcl -notrace
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source lab2_example.tcl -notrace
+Command: link_design -top lab2_example -part xc7a75tfgg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 175 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a75tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:73]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:97]
+INFO: [Timing 38-2] Deriving generated clocks [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:97]
+get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1234.977 ; gain = 570.324
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'CVM300_LVDS_CLK_P'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300-LVDS_CLK_P'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_LVDS_CLK_N'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_LVDS_CLK_N'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_CLK_IN'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_CLK_IN'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_CLK_OUT'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_CLK_OUT'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_SYS_RES_N'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_SYS_RES_N'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_Enable_LVDS'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_Enable_LVDS'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_SPI_EN'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_SPI_EN'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_SPI_IN'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_SPI_IN'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_SPI_OUT'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_SPI_OUT'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_SPI_CLK'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_SPI_CLK'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_FRAME_REQ'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_FRAME_REQ'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[0]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[0]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:199]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:199]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[1]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[1]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:202]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:202]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[2]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[2]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[3]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[3]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:208]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:208]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[4]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:210]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:210]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[4]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:211]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:211]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[5]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:213]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:213]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[5]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:214]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:214]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[6]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[6]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:217]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:217]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[7]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:219]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:219]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[7]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:220]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:220]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[8]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:222]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[8]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:223]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:223]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[9]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_D[9]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:226]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_Line_valid'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:229]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:229]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_Line_valid'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:230]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:230]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_Data_valid'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:232]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:232]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CVM300_Data_valid'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:233]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:233]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[0]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:239]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:239]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[0]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:240]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:240]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[1]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:242]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:242]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[1]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:243]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:243]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[2]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:245]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:245]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[2]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:246]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:246]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[3]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:248]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:248]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[3]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:249]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:249]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[4]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:251]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:251]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[4]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:252]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:252]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[5]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:254]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:254]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[5]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:255]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:255]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[6]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:257]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:257]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[6]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:258]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:258]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[7]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:260]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:260]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_33[7]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:261]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:261]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_SRCC_P'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:264]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:264]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_SRCC_P'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:265]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:265]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_SRCC_N'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:267]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:267]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_SRCC_N'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:268]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:268]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[0]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:273]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:273]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[0]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:274]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:274]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[1]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:276]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:276]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[1]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:277]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:277]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[2]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:279]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:279]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[2]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:280]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:280]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[3]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:282]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:282]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[3]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:283]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:283]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[4]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:285]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:285]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[4]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:286]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:286]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[5]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:288]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:288]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[5]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:289]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:289]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[6]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:291]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:291]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[6]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:292]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:292]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[7]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:294]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:294]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_25[7]'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:295]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:295]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A1'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:300]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:300]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A1'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:301]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:301]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A2'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:303]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:303]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A2'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:304]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:304]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A3'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:306]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:306]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A3'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:307]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:307]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A4'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:309]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:309]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A4'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:310]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:310]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A7'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:312]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:312]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A7'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:313]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:313]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A8'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:315]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:315]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A8'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:316]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:316]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A9'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:318]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:318]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A9'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:319]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:319]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A10'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:321]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:321]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A10'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:322]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:322]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B1'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:327]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:327]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B1'. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:328]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:328]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:328]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:328]
+Finished Parsing XDC File [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1234.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 95 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 33 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 8 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+11 Infos, 103 Warnings, 100 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1234.977 ; gain = 911.195
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a75t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.801 . Memory (MB): peak = 1234.977 ; gain = 0.000
+
+Starting Cache Timing Information Task
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:73]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 15024f1a1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1249.680 ; gain = 14.703
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 46 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 17271a323
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.227 . Memory (MB): peak = 1334.406 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 27 cells and removed 31 cells
+INFO: [Opt 31-1021] In phase Retarget, 7 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 216edfc64
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.304 . Memory (MB): peak = 1334.406 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 37 cells and removed 62 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 8 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1c63d0de4
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.389 . Memory (MB): peak = 1334.406 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 3 cells
+INFO: [Opt 31-1021] In phase Sweep, 12 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG hostIF/mmcm0_clk0_BUFG_inst to drive 0 load(s) on clock net hostIF/mmcm0_clk0_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 231e0b6bb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.452 . Memory (MB): peak = 1334.406 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 19fbbf4f5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.659 . Memory (MB): peak = 1334.406 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1250b46b8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.685 . Memory (MB): peak = 1334.406 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 4 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              27  |              31  |                                              7  |
+|  Constant propagation         |              37  |              62  |                                              8  |
+|  Sweep                        |               1  |               3  |                                             12  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              4  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1334.406 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 2095692cd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.716 . Memory (MB): peak = 1334.406 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:73]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.062 | TNS=-36.924 |
+INFO: [Power 33-23] Power model is not available for a0/d0/dna0
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 1 BRAM(s) out of a total of 3 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 1 newly gated: 1 Total Ports: 6
+Number of Flops added for Enable Generation: 3
+
+Ending PowerOpt Patch Enables Task | Checksum: 1a06ba416
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1a06ba416
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1542.180 ; gain = 207.773
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:73]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-194] Inserted BUFG hostIF/mmcm0_clk0_BUFG_inst to drive 0 load(s) on clock net hostIF/mmcm0_clk0_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Ending Logic Optimization Task | Checksum: 206f9e345
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.258 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 206f9e345
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 206f9e345
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1542.180 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+43 Infos, 109 Warnings, 100 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1542.180 ; gain = 307.203
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1542.180 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.337 . Memory (MB): peak = 1542.180 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'U:/Desktop/ECE 437/lab2/lab2/lab2.runs/impl_1/lab2_example_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file lab2_example_drc_opted.rpt -pb lab2_example_drc_opted.pb -rpx lab2_example_drc_opted.rpx
+Command: report_drc -file lab2_example_drc_opted.rpt -pb lab2_example_drc_opted.pb -rpx lab2_example_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file U:/Desktop/ECE 437/lab2/lab2/lab2.runs/impl_1/lab2_example_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a75t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[10] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[5]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[11] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[6]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[12] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[7]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[13] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[8]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[5] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[0]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[6] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[1]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[7] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[2]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[8] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[3]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[9] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[4]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[10] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[5]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[11] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[6]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[12] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[7]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[13] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[8]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[5] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[0]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[6] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[1]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[7] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[2]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[8] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[3]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[9] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[4]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ENBWREN (net: hostIF/core0/core0/l2fd7e1a4c1a262bf4062db5f061b7878) which is driven by a register (hostIF/core0/core0/l2fd7e1a4c1a262bf4062db5f061b7878_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/WEBWE[2] (net: hostIF/core0/core0/l2fd7e1a4c1a262bf4062db5f061b7878) which is driven by a register (hostIF/core0/core0/l2fd7e1a4c1a262bf4062db5f061b7878_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out[5]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[5] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out[0]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[6] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out[1]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[7] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out[2]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[8] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out[3]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[9] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out[4]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[10] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_12_out[5]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[5] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_12_out[0]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[6] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_12_out[1]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[7] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_12_out[2]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[8] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_12_out[3]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[9] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_12_out[4]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENBWREN (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_19_out) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/RSTRAMARSTRAM (net: hostIF/core0/core0/a0/cb0/U0/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_i_3_n_0) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[0] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_19_out) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[1] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_19_out) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[2] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_19_out) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[3] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_19_out) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 42 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 11e84f2d3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:73]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 648d428e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 149028cd4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 149028cd4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 149028cd4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 7dc87754
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           5  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 13fb95433
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1745053b0
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1745053b0
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1588b09b3
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1f76ce39c
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1c01cc9d3
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 17722dc1f
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 17fd6f165
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: b9a58f7f
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 172357628
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1834ea2d4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1834ea2d4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:73]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1143e5e2b
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-46] BUFG insertion identified 0 candidate nets, 0 success, 0 bufg driver replicated, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1143e5e2b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1542.180 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.274. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1031018dd
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1031018dd
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1031018dd
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1031018dd
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1542.180 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 1563ab008
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1563ab008
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Ending Placer Task | Checksum: 9ea4a1a5
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1542.180 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+75 Infos, 155 Warnings, 100 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1542.180 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1542.180 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'U:/Desktop/ECE 437/lab2/lab2/lab2.runs/impl_1/lab2_example_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file lab2_example_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.130 . Memory (MB): peak = 1542.180 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file lab2_example_utilization_placed.rpt -pb lab2_example_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file lab2_example_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a75t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 3098359c ConstDB: 0 ShapeSum: 6e0c6c09 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: cd9b0921
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 1542.180 ; gain = 0.000
+Post Restoration Checksum: NetGraph: a264e6e1 NumContArr: 2b362240 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: cd9b0921
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 1549.926 ; gain = 7.746
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: cd9b0921
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 1556.430 ; gain = 14.250
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: cd9b0921
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 1556.430 ; gain = 14.250
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 16dc4ef8e
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:32 . Memory (MB): peak = 1564.516 ; gain = 22.336
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.207  | TNS=0.000  | WHS=-0.353 | THS=-32.735|
+
+Phase 2 Router Initialization | Checksum: 1f3f57535
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1564.516 ; gain = 22.336
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 10af920d1
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1567.086 ; gain = 24.906
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 193
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.207  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1a2a2c26e
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1567.090 ; gain = 24.910
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.207  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1ff56bd44
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1567.090 ; gain = 24.910
+Phase 4 Rip-up And Reroute | Checksum: 1ff56bd44
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1567.090 ; gain = 24.910
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 1ff56bd44
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1567.090 ; gain = 24.910
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1ff56bd44
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1567.090 ; gain = 24.910
+Phase 5 Delay and Skew Optimization | Checksum: 1ff56bd44
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1567.090 ; gain = 24.910
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 2a27bd7ea
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1567.090 ; gain = 24.910
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.207  | TNS=0.000  | WHS=0.045  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 26d835e3c
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1567.090 ; gain = 24.910
+Phase 6 Post Hold Fix | Checksum: 26d835e3c
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1567.090 ; gain = 24.910
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.311007 %
+  Global Horizontal Routing Utilization  = 0.31813 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 255a861c0
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1567.090 ; gain = 24.910
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 255a861c0
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1569.102 ; gain = 26.922
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 20ad7ae92
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:34 . Memory (MB): peak = 1569.102 ; gain = 26.922
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.207  | TNS=0.000  | WHS=0.045  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 20ad7ae92
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:34 . Memory (MB): peak = 1569.102 ; gain = 26.922
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:34 . Memory (MB): peak = 1569.102 ; gain = 26.922
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+93 Infos, 155 Warnings, 100 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:35 . Memory (MB): peak = 1569.102 ; gain = 26.922
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1569.102 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1569.102 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1569.102 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'U:/Desktop/ECE 437/lab2/lab2/lab2.runs/impl_1/lab2_example_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file lab2_example_drc_routed.rpt -pb lab2_example_drc_routed.pb -rpx lab2_example_drc_routed.rpx
+Command: report_drc -file lab2_example_drc_routed.rpt -pb lab2_example_drc_routed.pb -rpx lab2_example_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file U:/Desktop/ECE 437/lab2/lab2/lab2.runs/impl_1/lab2_example_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file lab2_example_methodology_drc_routed.rpt -pb lab2_example_methodology_drc_routed.pb -rpx lab2_example_methodology_drc_routed.rpx
+Command: report_methodology -file lab2_example_methodology_drc_routed.rpt -pb lab2_example_methodology_drc_routed.pb -rpx lab2_example_methodology_drc_routed.rpx
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:73]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file U:/Desktop/ECE 437/lab2/lab2/lab2.runs/impl_1/lab2_example_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file lab2_example_power_routed.rpt -pb lab2_example_power_summary_routed.pb -rpx lab2_example_power_routed.rpx
+Command: report_power -file lab2_example_power_routed.rpt -pb lab2_example_power_summary_routed.pb -rpx lab2_example_power_routed.rpx
+INFO: [Power 33-23] Power model is not available for a0/d0/dna0
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE 437/xem7310_v1.xdc:73]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+106 Infos, 159 Warnings, 100 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file lab2_example_route_status.rpt -pb lab2_example_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file lab2_example_timing_summary_routed.rpt -pb lab2_example_timing_summary_routed.pb -rpx lab2_example_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file lab2_example_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file lab2_example_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file lab2_example_bus_skew_routed.rpt -pb lab2_example_bus_skew_routed.pb -rpx lab2_example_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force lab2_example.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a75t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[10] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[5]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[11] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[6]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[12] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[7]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[13] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[8]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[5] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[0]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[6] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[1]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[7] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[2]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[8] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[3]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRARDADDR[9] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[4]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[10] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[5]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[11] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[6]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[12] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[7]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[13] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[8]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[5] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[0]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[6] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[1]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[7] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[2]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[8] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[3]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ADDRBWRADDR[9] (net: hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg_n_0_[4]) which is driven by a register (hostIF/core0/core0/l287f1d33aab074157010cd04cb03cd77_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/ENBWREN (net: hostIF/core0/core0/l2fd7e1a4c1a262bf4062db5f061b7878) which is driven by a register (hostIF/core0/core0/l2fd7e1a4c1a262bf4062db5f061b7878_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hostIF/core0/core0/r0 has an input control pin hostIF/core0/core0/r0/WEBWE[2] (net: hostIF/core0/core0/l2fd7e1a4c1a262bf4062db5f061b7878) which is driven by a register (hostIF/core0/core0/l2fd7e1a4c1a262bf4062db5f061b7878_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out[5]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[5] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out[0]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[6] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out[1]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[7] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out[2]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[8] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out[3]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[9] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_0_out[4]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[10] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_12_out[5]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[5] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_12_out[0]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[6] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_12_out[1]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[7] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_12_out[2]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[8] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_12_out[3]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[9] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_12_out[4]) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENBWREN (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_19_out) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/RSTRAMARSTRAM (net: hostIF/core0/core0/a0/cb0/U0/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_i_3_n_0) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[0] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_19_out) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[1] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_19_out) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[2] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_19_out) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/WEBWE[3] (net: hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/p_19_out) which is driven by a register (hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 2 net(s) have no routable loads. The problem bus(es) and/or net(s) are hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, and hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 43 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 26223008 bits.
+Writing bitstream ./lab2_example.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+Access is denied.
+Access is denied.
+INFO: [Common 17-83] Releasing license: Implementation
+125 Infos, 202 Warnings, 100 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 2018.262 ; gain = 417.043
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 22 12:37:12 2020...

@@ -1,0 +1,162 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 24 15:31:20 2020
+# Process ID: 9784
+# Current directory: U:/Desktop/ECE437SP2020/lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10112 U:\Desktop\ECE437SP2020\lab5\lab5.xpr
+# Log file: U:/Desktop/ECE437SP2020/lab5/vivado.log
+# Journal file: U:/Desktop/ECE437SP2020/lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/Desktop/ECE437SP2020/lab5/lab5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 736.465 ; gain = 147.883
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/00001b3b91ac01]
+set_property PARAM.FREQUENCY 3000000 [get_hw_targets */xilinx_tcf/Xilinx/00001b3b91ac01]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00001b3b91ac01
+set_property PROGRAM.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-24 15:32:04
+set_property PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1961.512 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-24 15:32:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-24 15:32:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file U:/Desktop/ECE437SP2020/lab5/lab5.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Feb 24 15:50:31 2020] Launched synth_1...
+Run output will be captured here: U:/Desktop/ECE437SP2020/lab5/lab5.runs/synth_1/runme.log
+[Mon Feb 24 15:50:31 2020] Launched impl_1...
+Run output will be captured here: U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/runme.log
+set_property PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1961.512 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-24 15:54:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-24 15:55:01
+INFO: [Labtools 27-3304] ILA Waveform data saved to file U:/Desktop/ECE437SP2020/lab5/lab5.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Feb 24 16:05:46 2020] Launched synth_1...
+Run output will be captured here: U:/Desktop/ECE437SP2020/lab5/lab5.runs/synth_1/runme.log
+[Mon Feb 24 16:05:46 2020] Launched impl_1...
+Run output will be captured here: U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/runme.log
+set_property PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1961.512 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-24 16:11:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-24 16:11:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file U:/Desktop/ECE437SP2020/lab5/lab5.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Feb 24 16:47:49 2020] Launched synth_1...
+Run output will be captured here: U:/Desktop/ECE437SP2020/lab5/lab5.runs/synth_1/runme.log
+[Mon Feb 24 16:47:49 2020] Launched impl_1...
+Run output will be captured here: U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/runme.log
+set_property PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1961.512 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-24 16:52:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-24 16:52:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file U:/Desktop/ECE437SP2020/lab5/lab5.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Feb 24 17:04:52 2020] Launched synth_1...
+Run output will be captured here: U:/Desktop/ECE437SP2020/lab5/lab5.runs/synth_1/runme.log
+[Mon Feb 24 17:04:52 2020] Launched impl_1...
+Run output will be captured here: U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/runme.log
+set_property PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1961.512 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-24 17:09:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-24 17:09:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file U:/Desktop/ECE437SP2020/lab5/lab5.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Feb 24 17:28:18 2020] Launched synth_1...
+Run output will be captured here: U:/Desktop/ECE437SP2020/lab5/lab5.runs/synth_1/runme.log
+[Mon Feb 24 17:28:18 2020] Launched impl_1...
+Run output will be captured here: U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/runme.log
+set_property PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {U:/Desktop/ECE437SP2020/lab5/lab5.runs/impl_1/JTEG_Test_File.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1961.512 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-24 17:32:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_sample12"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-24 17:32:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file U:/Desktop/ECE437SP2020/lab5/lab5.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 24 17:40:22 2020...

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a75tfgg484-1" LaunchTime="1582596382">
+  <File Type="PA-TCL" Name="JTEG_Test_File.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="JTEG_Test_File_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="JTEG_Test_File_reports.tcl"/>
+  <File Type="RDS-RDS" Name="JTEG_Test_File.vds"/>
+  <File Type="RDS-UTIL" Name="JTEG_Test_File_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="JTEG_Test_File_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="JTEG_Test_File.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="JTEG_Test_File_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="JTEG_Test_File_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/ClockGenerator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/ClockGenerator.v"/>
+        <Attr Name="ImportTime" Val="1581956793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/I2C_Transmit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/I2C_Transmit.v"/>
+        <Attr Name="ImportTime" Val="1581956792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okCoreHarness.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okCoreHarness.v"/>
+        <Attr Name="ImportTime" Val="1525201188"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okLibrary.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okLibrary.v"/>
+        <Attr Name="ImportTime" Val="1525201188"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okWireOut.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okWireOut.v"/>
+        <Attr Name="ImportTime" Val="1525201188"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/JTEG_Test_File.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/JTEG_Test_File.v"/>
+        <Attr Name="ImportTime" Val="1581956792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okLibrary.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okLibrary.vhd"/>
+        <Attr Name="ImportTime" Val="1525201188"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okBTPipeIn.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okBTPipeIn.v"/>
+        <Attr Name="ImportTime" Val="1525201188"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okPipeOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okPipeOut.v"/>
+        <Attr Name="ImportTime" Val="1525201188"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okWireIn.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okWireIn.v"/>
+        <Attr Name="ImportTime" Val="1525201188"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okPipeIn.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okPipeIn.v"/>
+        <Attr Name="ImportTime" Val="1525201188"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okTriggerOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okTriggerOut.v"/>
+        <Attr Name="ImportTime" Val="1525201188"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okBTPipeOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okBTPipeOut.v"/>
+        <Attr Name="ImportTime" Val="1525201188"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okTriggerIn.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okTriggerIn.v"/>
+        <Attr Name="ImportTime" Val="1525201188"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okRegisterBridge.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okRegisterBridge.v"/>
+        <Attr Name="ImportTime" Val="1525201188"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="JTEG_Test_File"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/ECE 437/xem7310_v1.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="//ad.uillinois.edu/engr-ews/sohammk2/Desktop/ECE437SP2020/lab3/project_1.srcs/constrs_1/imports/ECE 437/xem7310_v1.xdc"/>
+        <Attr Name="ImportTime" Val="1579619467"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+</GenRun>

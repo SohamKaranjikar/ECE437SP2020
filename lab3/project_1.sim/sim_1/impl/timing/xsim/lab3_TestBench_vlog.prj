@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"lab3_TestBench_time_impl.v" \
+"../../../../../lab3_TestBench.v" \
+
+# Do not sort compile order
+nosort
