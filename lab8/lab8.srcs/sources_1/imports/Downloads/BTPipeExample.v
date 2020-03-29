@@ -9,18 +9,20 @@ module BTPipeExample(
     output [7:0] led,
     input sys_clkn,
     input sys_clkp,
+    output CVM300_SYS_RES_N,
 	output CVM300_SPI_EN,
     output CVM300_SPI_IN,
     input CVM300_SPI_OUT,
     output CVM300_SPI_CLK,
-    input [9:0] CVM300_D,
+    input [7:0] CVM300_D,
+    output CVM300_Enable_LVDS,
     input CVM300_CLK_OUT,
     input CVM300_Line_valid,
     input CVM300_Data_valid,
     output CVM300_CLK_IN,
-    output reg CVM300_FRAME_REQ
+    output CVM300_FRAME_REQ
     );
-    
+    assign CVM300_Enable_LVDS = 1'b0;
     wire okClk;            //These are FrontPanel wires needed to IO communication    
     wire [112:0]    okHE;  //These are FrontPanel wires needed to IO communication    
     wire [64:0]     okEH;  //These are FrontPanel wires needed to IO communication     
@@ -71,14 +73,14 @@ module BTPipeExample(
         );
     //Depending on the number of outgoing endpoints, adjust endPt_count accordingly.
     //In this example, we have 1 output endpoints, hence endPt_count = 1.
-    localparam  endPt_count = 5;
+    localparam  endPt_count = 6;
     wire [endPt_count*65-1:0] okEHx;  
     okWireOR # (.N(endPt_count)) wireOR (okEH, okEHx);    
     
     //Instantiate the ClockGenerator module, where three signals are generate:
     //High speed CLK signal, Low speed FSM_Clk signal     
     wire [23:0] ClkDivThreshold = 2;
-    wire [23:0] ClkDivThresholdSPI = 50;  
+    wire [23:0] ClkDivThresholdSPI = 5;  
     wire [23:0] ClkDivThresholdCVM = 5;   
     reg [23:0] ClkDivSPI = 24'd0;
     reg [23:0] ClkDivCVM = 24'd0;    
@@ -115,7 +117,7 @@ module BTPipeExample(
     localparam STATE_COUNT               = 8'd5;
     localparam STATE_FINISH              = 8'd6;
    
-    reg [31:0] counter = 8'd0;
+    reg [31:0] counter = 32'd0;
     reg [15:0] counter_delay = 16'd0;
     reg [7:0] State = STATE_INIT;
     reg [7:0] led_register = 0;
@@ -135,112 +137,197 @@ module BTPipeExample(
     initial begin
         write_reset <= 1'b0;
         read_reset <= 1'b0;
-        write_enable <= 1'b1;    
+        write_enable <= 1'b0;    
     end
     reg [7:0] CVM_State = 8'd0;
     reg [7:0] CVM_State2 = 8'd0;
-    reg [31:0] CVM_4Pixels = 8'd0;
-    reg imgreadcomplete;
+    reg [31:0] CVM_4Pixels = 32'd0;
+    reg imgreadcompleter;
+    wire imgreadcomplete;
+    reg enable_write;
+    reg CVM300_SYS_RES_N_R = 1'b0;
+    assign CVM300_SYS_RES_N = CVM300_SYS_RES_N_R;
+    assign imgreadcomplete = imgreadcompleter;
+    
+    reg CVM300_FRAME_REQ_R =1'b0;
+    assign CVM300_FRAME_REQ = CVM300_FRAME_REQ_R;
+    
+    reg spistarttrigr;
+    wire spistarttrig;
+    assign spistarttrig = spistarttrigr;
+    
+    reg [15:0] startdelay = 16'd0;
+    reg triggerila;
     //get Image data from Sensor
     always @(posedge CVM300_CLK_IN) begin
-        if(FRAME_REQ == 1'b1) begin
-            CVM_State <= 8'd1;
-        end
-        
+       
+                 
         case(CVM_State)
             8'd0:   begin
-                CVM300_FRAME_REQ <= 1'b0;
-                write_reset <= 1'b1;
-                read_reset <= 1'b1;
-                if(FRAME_REQ == 1'b1) begin
-                    CVM_State <= 8'd1;
+                if (startdelay == 16'b1111_1111_1111_1111) begin
+                     CVM_State <= 8'd1;
+                     CVM300_SYS_RES_N_R <= 1'b1;
+                end
+                else begin
+                    startdelay <= startdelay + 1;
+                    CVM_State <= 8'd0;
+                    CVM300_SYS_RES_N_R <= 1'b0;
                 end
             end
             
             8'd1:   begin
-                write_reset <= 1'b1;
-                read_reset <= 1'b1;
-                write_enable <= 1'b0;
+                startdelay <= 16'd0;
                 CVM_State <= 8'd2;
+                spistarttrigr <= 1'b0;
             end
             
             8'd2:   begin
-                write_reset <= 1'b0;
-                read_reset <= 1'b0;
-                CVM_State <= 8'd3;
+                if (startdelay == 16'b0000_1111_1111_1111) begin
+                    write_reset <= 1'b1;
+                    read_reset <= 1'b1;
+                    CVM_State <= 8'd3;
+                    spistarttrigr <= 1'b1;
+                end
+                else begin
+                    startdelay <= startdelay + 1;
+                    CVM_State <= 8'd2;
+                end
             end
             
             8'd3:   begin
+                write_reset <= 1'b1;
+                read_reset <= 1'b1;
+                counter_delay <= 0;
+                CVM300_FRAME_REQ_R <= 1'b0;
+                if(FRAME_REQ == 1'b1) begin
+                    spistarttrigr <= 1'b0;
+                    CVM_State <= 8'd4;
+                end
+           end
+           
+           8'd4:    begin
+                write_reset <= 1'b0;
+                read_reset <= 1'b0;
+                if(FRAME_REQ == 1'b0) begin
+                    CVM_State <= 8'd5;
+                end
+           end
+          
+           8'd5:   begin
+                if (counter_delay == 16'b0000_1111_1111_1111)  CVM_State <= 8'd6;
+                else counter_delay <= counter_delay + 1;
+            end
+            
+            8'd6:   begin
+                 triggerila <= 1'b1;
+                 CVM300_FRAME_REQ_R <= 1'b1;
+                 CVM_State <= 8'd7;
+            end
+            
+            8'd7:   begin
+                CVM300_FRAME_REQ_R <= 1'b0; 
+                CVM_State <= 8'd8;       
+                counter_delay <= 16'd0;    
+            end
+            
+            8'd8:   begin
+                 if (counter_delay == 16'b0000_0000_1111_1111) begin
+                     CVM_State <= 8'd9;
+                     CVM300_FRAME_REQ_R <= 1'b1;
+                     spistarttrigr <= 1'b1;
+                 end
+                 else counter_delay <= counter_delay + 1;
+            end
+            
+            8'd9:   begin
+                CVM300_FRAME_REQ_R <= 1'b0;
+                if(CVM300_Data_valid == 1'b1) begin
+                    CVM_State <= 8'd10;
+                end
+            end
+            
+            8'd10:   begin
+                CVM300_FRAME_REQ_R <= 1'b0; 
+                CVM_State <= 8'd10;
             end
         endcase            
     end
     
-    reg[17:0] pixelcounter = 18'd0;
+    reg[18:0] pixelcounter;
     
     initial  begin
-        write_enable = 1'b0;
-        imgreadcomplete = 1'b0;
+        write_enable <= 1'b0;
+        imgreadcompleter <= 1'b0;
+        CVM300_FRAME_REQ_R <= 1'b0;
+        pixelcounter <= 19'd0;
+        write_enable_counter <= 0;
     end 
     
     always @(negedge CVM300_CLK_OUT) begin
-        if(CVM_State == 8'd3) begin
-            CVM_State2 <= 8'd1;
-        end
         
         case(CVM_State2)
+        
             8'd0:   begin
-                CVM300_FRAME_REQ <= 1'b0;
-                if(CVM_State == 8'd3) begin
-                    CVM_State2 <= 8'd1;
-                end
+                if(CVM_State == 8'd10) begin
+                    if(pixelcounter >= 19'd316224) begin
+                        CVM_State2 <= 8'd4;
+                    end
+                    else if(CVM300_Data_valid == 1'b1) begin
+                        CVM_4Pixels[7:0] <= CVM300_D[7:0];
+                        pixelcounter <= pixelcounter + 18'd1;
+                        CVM_State2 <= 8'd1;
+                    end
+                    else begin
+                        CVM_State2 <= 8'd0;
+                    end
+                 end
+                 else begin
+                    CVM_State2 <= 8'd0;
+                 end
+                 write_enable <= 1'b0;
             end
             
             8'd1:   begin
-                CVM300_FRAME_REQ <= 1'b1;
-                CVM_State2 <= 8'd2;
+                if(CVM300_Data_valid == 1'b1) begin
+                    CVM_4Pixels[15:8] <= CVM300_D[7:0];
+                    pixelcounter <= pixelcounter + 18'd1;
+                    CVM_State2 <= 8'd2;
+                end
+                else begin
+                        CVM_State2 <= 8'd1;
+                    end
             end
             
             8'd2:   begin
-                write_enable <= 1'b0; //maybe move this to next state?
-                
-                if(pixelcounter >= 18'd79056) begin
-                    CVM_State2 <= 8'd6;
-                end
-                else if(CVM300_Data_valid && CVM300_Line_valid) begin
-                    CVM_4Pixels[7:0] = CVM300_D[7:0];
-                    pixelcounter <= pixelcounter + 1'd1;
+                if(CVM300_Data_valid == 1'b1) begin
+                    CVM_4Pixels[23:16] <= CVM300_D[7:0];
+                    pixelcounter <= pixelcounter + 18'd1;
                     CVM_State2 <= 8'd3;
+                end
+                else begin
+                        CVM_State2 <= 8'd2;
                 end
             end
             
             8'd3:   begin
-                if(CVM300_Data_valid && CVM300_Line_valid) begin
-                    CVM_4Pixels[15:8] = CVM300_D[7:0];
-                    pixelcounter <= pixelcounter + 1'd1;
-                    CVM_State2 <= 8'd4;
+                 if(CVM300_Data_valid == 1'b1) begin
+                    CVM_4Pixels[31:24] <= CVM300_D[7:0];
+                    pixelcounter <= pixelcounter + 18'd1;
+                    CVM_State2 <= 8'd0;
+                    write_enable <= 1'b1;
                 end
+                else begin
+                        CVM_State2 <= 8'd3;
+                        write_enable <= 1'b0;
+                    end
+                
             end
             
             8'd4:   begin
-                if(CVM300_Data_valid && CVM300_Line_valid) begin
-                    CVM_4Pixels[23:16] = CVM300_D[7:0];
-                    pixelcounter <= pixelcounter + 1'd1;
-                    CVM_State2 <= 8'd5;
-                end
-            end
-            
-            8'd5:   begin
-                if(CVM300_Data_valid && CVM300_Line_valid) begin
-                    CVM_4Pixels[31:24] = CVM300_D[7:0];
-                    pixelcounter <= pixelcounter + 1'd1;
-                    CVM_State2 <= 8'd2;
-                    write_enable <= 1'b1;
-                end
-            end
-            
-            8'd6:   begin
+                imgreadcompleter <= 1'b1;
+                pixelcounter <= 18'd0;
                 write_enable <= 1'b0;
-                imgreadcomplete <= 1'b1;
+                CVM_State2 <= 8'd4;
             end
         endcase
         
@@ -304,7 +391,7 @@ module BTPipeExample(
 //    end    
        
     fifo_generator_0 FIFO_for_Counter_BTPipe_Interface (
-        .wr_clk(CVM_CLOCK_OUT),
+        .wr_clk(CVM300_CLK_OUT),
         .wr_rst(write_reset),
         .rd_clk(okClk),
         .rd_rst(read_reset),
@@ -344,7 +431,12 @@ module BTPipeExample(
     okWireOut wire23 (  .okHE(okHE), 
                         .okEH(okEHx[ 4*65 +: 65 ]),
                         .ep_addr(8'h23), 
-                        .ep_datain(imgreadcomplete));                    
+                        .ep_datain(imgreadcomplete));
+                        
+    okWireOut wire24 (  .okHE(okHE), 
+                        .okEH(okEHx[ 5*65 +: 65 ]),
+                        .ep_addr(8'h24), 
+                        .ep_datain(spistarttrig));
 
      
      okWireIn wire10 (   .okHE(okHE), 
@@ -366,7 +458,19 @@ module BTPipeExample(
     okWireIn wire14 (   .okHE(okHE), 
                         .ep_addr(8'h04), 
                         .ep_dataout(Reset_Counter));
+                        
     okWireIn wire15 (  .okHE(okHE), 
                         .ep_addr(8'h05), 
-                        .ep_dataout(FRAME_REQ));                                                 
+                        .ep_dataout(FRAME_REQ));      
+                        
+    //ILA module for debugging
+    ila_0 ila_sample12 ( 
+        .clk(ILA_Clk),
+        .probe0(CVM_4Pixels),                             
+        .probe1(CVM300_CLK_OUT),
+        .probe2(CVM300_Line_valid),
+        .probe3(CVM300_Data_valid),
+        .probe4(CVM300_Data_valid),
+        .probe5(CVM300_D)
+        );                                           
 endmodule

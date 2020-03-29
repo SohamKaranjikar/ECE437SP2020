@@ -1,0 +1,407 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 12888
+License: Customer
+
+Current time: 	Fri Mar 27 06:03:13 CDT 2020
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1200
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 692 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	sohammk2
+User home directory: C:/Users/sohammk2
+User working directory: U:/Desktop/ECE437SP20200/lab8
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/sohammk2/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/sohammk2/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/sohammk2/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	U:/Desktop/ECE437SP20200/lab8/vivado.log
+Vivado journal file location: 	U:/Desktop/ECE437SP20200/lab8/vivado.jou
+Engine tmp dir: 	U:/Desktop/ECE437SP20200/lab8/.Xil/Vivado-12888-ECEB-4022-15
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+okFP_SDK: C:\Program Files\Opal Kelly\FrontPanelUSB\API
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 584 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: U:\Desktop\ECE437SP20200\lab8\lab8.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project U:/Desktop/ECE437SP20200/lab8/lab8.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 603 MB. GUI used memory: 41 MB. Current time: 3/27/20, 6:03:15 AM CDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 96 MB (+98411kb) [00:00:13]
+// [Engine Memory]: 631 MB (+509667kb) [00:00:13]
+// [GUI Memory]: 102 MB (+1485kb) [00:00:15]
+// [Engine Memory]: 674 MB (+12881kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  3793 ms.
+// Tcl Message: open_project U:/Desktop/ECE437SP20200/lab8/lab8.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/temp/lab8' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1522 ms. Increasing delay to 3000 ms.
+// Project name: lab8; location: U:/Desktop/ECE437SP20200/lab8; part: xc7a75tfgg484-1
+// [Engine Memory]: 900 MB (+201354kb) [00:00:19]
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 952.047 ; gain = 365.934 
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BTPipeExample (BTPipeExample.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BTPipeExample (BTPipeExample.v), hostIF : okHost (okLibrary.v)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// [GUI Memory]: 118 MB (+10807kb) [00:00:44]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BTPipeExample (BTPipeExample.v), hostIF : okHost (okLibrary.v)]", 2, true); // B (D, cp) - Node
+// [GUI Memory]: 126 MB (+2194kb) [00:00:44]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BTPipeExample (BTPipeExample.v), hostIF : okHost (okLibrary.v)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 60 MB. Current time: 3/27/20, 6:03:55 AM CDT
+// Elapsed time: 91 seconds
+selectCodeEditor("BTPipeExample.v", 290, 271); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 287, 275); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 404, 179); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 152, 328); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 127, 370); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 197, 412); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 197, 403); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 409, 178); // cl (w, cp)
+typeControlKey((HResource) null, "BTPipeExample.v", 'c'); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 118, 418); // cl (w, cp)
+typeControlKey((HResource) null, "BTPipeExample.v", 'v'); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 262, 350); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 230, 350); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 296, 353); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 428, 451); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 353, 434); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("BTPipeExample.v", 740, 506); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 316, 436); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (StateMonitor Timer) is taking 608ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 158 seconds
+selectCodeEditor("BTPipeExample.v", 203, 362); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("BTPipeExample.v", 373, 164); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 562, 331); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 565, 337); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 562, 334); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 259, 454); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 191, 107); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("BTPipeExample.v", 217, 349); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "4", 3); // e (bc, f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 7 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar 27 06:10:05 2020] Launched synth_1... Run output will be captured here: U:/Desktop/ECE437SP20200/lab8/lab8.runs/synth_1/runme.log [Fri Mar 27 06:10:05 2020] Launched impl_1... Run output will be captured here: U:/Desktop/ECE437SP20200/lab8/lab8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 292 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// Elapsed time: 134 seconds
+selectCodeEditor("BTPipeExample.v", 313, 223); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 290, 233); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 412, 232); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("BTPipeExample.v", 437, 400); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("BTPipeExample.v", 118, 503); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 152 seconds
+selectCodeEditor("BTPipeExample.v", 305, 328); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("BTPipeExample.v", 674, 128); // cl (w, cp)
+// Elapsed time: 167 seconds
+selectCodeEditor("BTPipeExample.v", 130, 421); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("BTPipeExample.v", 122, 340); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 253, 229); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 365, 227); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 7 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: ERROR: [Runs 36-335] 'U:/Desktop/ECE437SP20200/lab8/lab8.runs/synth_1/BTPipeExample.dcp' is not a valid design checkpoint 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Runs 36-335] 'U:/Desktop/ECE437SP20200/lab8/lab8.runs/synth_1/BTPipeExample.dcp' is not a valid design checkpoint  
+// aX (cp): Launch Run Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (aX)
+dismissDialog("Launch Run Critical Messages"); // aX (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar 27 06:24:42 2020] Launched synth_1... Run output will be captured here: U:/Desktop/ECE437SP20200/lab8/lab8.runs/synth_1/runme.log [Fri Mar 27 06:24:42 2020] Launched impl_1... Run output will be captured here: U:/Desktop/ECE437SP20200/lab8/lab8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 32 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aI (aF, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 247 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 68 MB. Current time: 3/27/20, 6:33:56 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 60 MB. Current time: 3/27/20, 7:03:56 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 58 MB. Current time: 3/27/20, 7:33:56 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 58 MB. Current time: 3/27/20, 8:03:57 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 58 MB. Current time: 3/27/20, 8:33:57 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 58 MB. Current time: 3/27/20, 9:03:57 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 59 MB. Current time: 3/27/20, 9:33:57 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 58 MB. Current time: 3/27/20, 10:03:58 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 58 MB. Current time: 3/27/20, 10:33:58 AM CDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1140 ms. Increasing delay to 3420 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 58 MB. Current time: 3/27/20, 11:03:58 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 58 MB. Current time: 3/27/20, 11:33:58 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 58 MB. Current time: 3/27/20, 12:03:59 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 58 MB. Current time: 3/27/20, 12:33:59 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 58 MB. Current time: 3/27/20, 1:03:59 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 58 MB. Current time: 3/27/20, 1:33:59 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 59 MB. Current time: 3/27/20, 2:04:00 PM CDT

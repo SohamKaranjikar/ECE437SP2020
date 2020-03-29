@@ -31,28 +31,22 @@ print("----------------------------------------------------")
 print("----------------------------------------------------")
 
 #%% 
-dev.SetWireInValue(0x04, 1); #Reset FIFOs and counter
+dev.SetWireInValue(0x05, 1); #Reset FIFOs and counter
 dev.UpdateWireIns();  # Update the WireIns
 
-dev.SetWireInValue(0x4, 0); #Release reset signal
+print('next step')
+
+
+dev.SetWireInValue(0x05, 0); #Release reset signal
 dev.UpdateWireIns();  # Update the WireIns
  
-buf = bytearray(1024);
+buf = bytearray(1024*4);
 dev.ReadFromBlockPipeOut(0xa0, 1024, buf);  # Read data from BT PipeOut
 
 f= open("data.txt","w+")
 
 #%%
-for i in range (0, 1024, 4):
-    result = buf[i] + (buf[i+1]<<8) + (buf[i+2]<<16) + (buf[i+3]<<24);
-    f.write("%d\r\n"%result)
+for i in range (0, 100, 1):
+    result = buf[i];
     print (result)
-
-dev.ReadFromBlockPipeOut(0xa0, 1024, buf);
-for i in range (0, 1024, 4):
-    result = buf[i] + (buf[i+1]<<8) + (buf[i+2]<<16) + (buf[i+3]<<24);
-    f.write("%d\r\n"%result)
-    print (result)
-    
-f.close();
 #%%

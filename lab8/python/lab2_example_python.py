@@ -7,6 +7,8 @@ import sys    # system related library
 ok_loc = 'C:\\Program Files\\Opal Kelly\\FrontPanelUSB\\API\\Python\\3.6\\x64'
 sys.path.append(ok_loc)   # add the path of the OK library
 import ok     # OpalKelly library
+from PIL import Image
+import numpy as np
 
 #%% 
 # Define FrontPanel device variable, open USB communication and
@@ -37,14 +39,18 @@ print("----------------------------------------------------")
 #%% 
 # Define the two variables that will send data to the FPGA
 # We will use WireIn instructions to send data to the FPGA
-regaddress = [1,2,3,4,57,58,59,60,68,69,80,83,97,98,100,101,102,103,106,107,108,109,110,117]
-regvalues = [232,1,0,0,3,44,240,10,2,9,2,187,240,10,112,98,34,64,94,110,91,82,80,91]
+dev.UpdateWireOuts()
+regaddress = [1,2,3,4,39,42,43,44,57,58,59,60,68,69,80,83,97,98,100,101,102,103,106,107,108,109,110,117]
+regvalues = [232,1,0,0,1,232,1,0,3,44,240,10,2,9,2,187,240,10,112,98,34,64,94,110,91,82,80,91]
 R_W = -1
 FLAG = 0
 ADDRS = -1
 REG_Val = -1
 START_BIT = -1
 
+while(dev.GetWireOutValue(0x24) != 1):
+    dev.UpdateWireOuts()
+    continue
 print("Setting register values to required")
 for i in range(len(regaddress)):
     R_W = -1
@@ -100,28 +106,78 @@ for i in range(len(regaddress)):
 print('Configuring required registers completed')
     
 
+#dev.UpdateWireOuts()
+#print('imgreadcompleteval: '+str(dev.GetWireOutValue(0x23)))
 dev.SetWireInValue(0x05, 1); #Reset FIFOs and counter
 dev.UpdateWireIns();  # Update the WireIns
 
+time.sleep(.01)
+#print('next step')
+
 dev.SetWireInValue(0x05, 0); #Release reset signal
 dev.UpdateWireIns();  # Update the WireIns
- 
-buf = bytearray(1024);
-#dev.ReadFromBlockPipeOut(0xa0, 1024, buf);  # Read data from BT PipeOut
 
-f= open("data.txt","w+")
+buf = bytearray(315392)
+buf12 = bytearray(315104)
 
-#%%
-while(dev.GetWireOutValue(0x23)!=1):
+buf1 = bytearray(1024*44);
+buf2 = bytearray(1024*44);
+buf3 = bytearray(1024*44);
+buf4 = bytearray(1024*44);
+buf5 = bytearray(1024*44);
+buf6 = bytearray(1024*44);
+buf7 = bytearray(1024*44);
 
-    dev.ReadFromBlockPipeOut(0xa0, 1024, buf);
-    for i in range (0, 1024, 1):
-        result = buf[i]
-        f.write("%d\r\n"%result)
-        print (result)
+while(dev.GetWireOutValue(0x24) != 1):
     dev.UpdateWireOuts()
-    
-f.close();
+    continue
+
+print('READ: '+str(dev.ReadFromBlockPipeOut(0xa0, 1024, buf)))
+#dev.ReadFromBlockPipeOut(0xa0, 1024, buf2);  # Read data from BT PipeOut
+#dev.ReadFromBlockPipeOut(0xa0, 1024, buf3);
+#dev.ReadFromBlockPipeOut(0xa0, 1024, buf4);
+#dev.ReadFromBlockPipeOut(0xa0, 1024, buf5);
+#dev.ReadFromBlockPipeOut(0xa0, 1024, buf6);
+#dev.ReadFromBlockPipeOut(0xa0, 1024, buf7);
+
+
+#dev.UpdateWireOuts()
+#while(dev.GetWireOutValue(0x23) != 1):
+#    continue
+#    dev.UpdateWireOuts()
+#    print('pc: '+str(dev.GetWireOutValue(0x24)))
+#    continue
+
+
+#for i in range (0,315392,1):
+#    if(buf12[i]==0):
+#        continue
+#    elif(buf12[i]==4):
+#        continue
+#    elif(buf12[i]==8):
+#        continue
+#    elif(buf12[i]==12):
+#        continue
+#    else:
+#        print(buf12[i])
+
+print("done")
+
+for x in range (0,315104,1):
+    buf12[x]=buf[x]
+
+pixels = np.arange(315104).reshape(458,688).astype('uint8')
+
+counterpix = 0
+
+for i in range (0,458,1):
+    for j in range (0,688,1):
+        pixels[457-i][j] = buf12[counterpix]
+        counterpix += 1
+array = np.array(pixels, dtype=np.uint8)
+new_image = Image.fromarray(array)
+new_image.save('new011.png')
+
     
 #while(1):
 #    R_W = -1
@@ -176,8 +232,3 @@ f.close();
 #        while(dev.GetWireOutValue(0x21)!=1):
 #            continue
 #        print('Write Complete')
-    
-
-dev.Close
-    
-#%%
