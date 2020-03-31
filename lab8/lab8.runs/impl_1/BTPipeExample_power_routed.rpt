@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sun Mar 29 17:15:25 2020
+| Date             : Tue Mar 31 09:36:05 2020
 | Host             : ECEB-4022-09 running 64-bit major release  (build 9200)
 | Command          : report_power -file BTPipeExample_power_routed.rpt -pb BTPipeExample_power_summary_routed.pb -rpx BTPipeExample_power_routed.rpx
 | Design           : BTPipeExample
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.251        |
+| Total On-Chip Power (W)  | 0.246        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.150        |
-| Device Static (W)        | 0.100        |
+| Dynamic (W)              | 0.147        |
+| Device Static (W)        | 0.098        |
 | Effective TJA (C/W)      | 2.7          |
 | Max Ambient (C)          | 84.3         |
 | Junction Temperature (C) | 25.7         |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.012 |        7 |       --- |             --- |
-| Slice Logic              |     0.008 |    11351 |       --- |             --- |
-|   LUT as Logic           |     0.007 |     3835 |     47200 |            8.13 |
-|   Register               |    <0.001 |     5270 |     94400 |            5.58 |
+| Clocks                   |     0.009 |        7 |       --- |             --- |
+| Slice Logic              |     0.008 |    11092 |       --- |             --- |
+|   LUT as Logic           |     0.007 |     3764 |     47200 |            7.97 |
+|   Register               |    <0.001 |     5177 |     94400 |            5.48 |
 |   CARRY4                 |    <0.001 |      214 |     15850 |            1.35 |
 |   LUT as Distributed RAM |    <0.001 |      184 |     19000 |            0.97 |
 |   LUT as Shift Register  |    <0.001 |      264 |     19000 |            1.39 |
 |   BUFG                   |    <0.001 |        5 |        32 |           15.63 |
-|   F7/F8 Muxes            |    <0.001 |      188 |     63400 |            0.30 |
-|   Others                 |     0.000 |      726 |       --- |             --- |
-| Signals                  |     0.009 |     8294 |       --- |             --- |
-| Block RAM                |     0.002 |     61.5 |       105 |           58.57 |
+|   F7/F8 Muxes            |    <0.001 |      203 |     63400 |            0.32 |
+|   Others                 |     0.000 |      618 |       --- |             --- |
+| Signals                  |     0.009 |     8206 |       --- |             --- |
+| Block RAM                |     0.002 |     19.5 |       105 |           18.57 |
 | MMCM                     |     0.106 |        1 |         6 |           16.67 |
 | I/O                      |     0.013 |       70 |       285 |           24.56 |
-| Static Power             |     0.100 |          |           |                 |
-| Total                    |     0.251 |          |           |                 |
+| Static Power             |     0.098 |          |           |                 |
+| Total                    |     0.246 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.051 |       0.034 |      0.017 |
+| Vccint    |       1.000 |     0.047 |       0.031 |      0.016 |
 | Vccaux    |       1.800 |     0.079 |       0.061 |      0.018 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -86,7 +86,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -150,15 +150,15 @@ Table of Contents
 +-------------------------------------+-----------+
 | Name                                | Power (W) |
 +-------------------------------------+-----------+
-| BTPipeExample                       |     0.150 |
+| BTPipeExample                       |     0.147 |
 |   ClockGenerator1                   |     0.005 |
-|   FIFO_for_Counter_BTPipe_Interface |     0.002 |
-|     U0                              |     0.002 |
-|       inst_fifo_gen                 |     0.002 |
-|   dbg_hub                           |     0.003 |
-|     inst                            |     0.003 |
-|       BSCANID.u_xsdbm_id            |     0.003 |
-|   hostIF                            |     0.134 |
+|   FIFO_for_Counter_BTPipe_Interface |     0.001 |
+|     U0                              |     0.001 |
+|       inst_fifo_gen                 |     0.001 |
+|   dbg_hub                           |     0.002 |
+|     inst                            |     0.002 |
+|       BSCANID.u_xsdbm_id            |     0.002 |
+|   hostIF                            |     0.133 |
 |     core0                           |     0.017 |
 |       core0                         |     0.017 |
 |   ila_sample12                      |     0.004 |

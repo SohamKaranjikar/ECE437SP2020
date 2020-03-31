@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun Mar 29 17:12:22 2020
+| Date         : Tue Mar 31 09:33:17 2020
 | Host         : ECEB-4022-09 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file BTPipeExample_utilization_synth.rpt -pb BTPipeExample_utilization_synth.pb
 | Design       : BTPipeExample
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 1214 |     0 |     47200 |  2.57 |
-|   LUT as Logic             | 1182 |     0 |     47200 |  2.50 |
+| Slice LUTs*                | 1212 |     0 |     47200 |  2.57 |
+|   LUT as Logic             | 1180 |     0 |     47200 |  2.50 |
 |   LUT as Memory            |   32 |     0 |     19000 |  0.17 |
 |     LUT as Distributed RAM |   32 |     0 |           |       |
 |     LUT as Shift Register  |    0 |     0 |           |       |
@@ -154,14 +154,14 @@ Table of Contents
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
 | FDRE       |  868 |        Flop & Latch |
-| LUT6       |  532 |                 LUT |
-| LUT4       |  404 |                 LUT |
-| LUT5       |  200 |                 LUT |
+| LUT6       |  522 |                 LUT |
+| LUT4       |  407 |                 LUT |
+| LUT5       |  199 |                 LUT |
 | FDCE       |  159 |        Flop & Latch |
 | CARRY4     |   83 |          CarryLogic |
+| LUT3       |   77 |                 LUT |
 | LUT1       |   71 |                 LUT |
-| LUT3       |   68 |                 LUT |
-| LUT2       |   62 |                 LUT |
+| LUT2       |   59 |                 LUT |
 | IBUF       |   50 |                  IO |
 | FDPE       |   37 |        Flop & Latch |
 | OBUFT      |   35 |                  IO |

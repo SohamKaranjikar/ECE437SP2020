@@ -76,7 +76,7 @@ input wire wr_rst;
 input wire rd_clk;
 input wire rd_rst;
 (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_write:1.0 FIFO_WRITE WR_DATA" *)
-input wire [31 : 0] din;
+input wire [7 : 0] din;
 (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_write:1.0 FIFO_WRITE WR_EN" *)
 input wire wr_en;
 (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_read:1.0 FIFO_READ RD_EN" *)
@@ -95,7 +95,7 @@ output wire prog_full;
     .C_COUNT_TYPE(0),
     .C_DATA_COUNT_WIDTH(16),
     .C_DEFAULT_VALUE("BlankString"),
-    .C_DIN_WIDTH(32),
+    .C_DIN_WIDTH(8),
     .C_DOUT_RST_VAL("11"),
     .C_DOUT_WIDTH(32),
     .C_ENABLE_RLOCS(0),
@@ -132,10 +132,10 @@ output wire prog_full;
     .C_PROG_FULL_THRESH_ASSERT_VAL(255),
     .C_PROG_FULL_THRESH_NEGATE_VAL(254),
     .C_PROG_FULL_TYPE(1),
-    .C_RD_DATA_COUNT_WIDTH(16),
-    .C_RD_DEPTH(65536),
+    .C_RD_DATA_COUNT_WIDTH(14),
+    .C_RD_DEPTH(16384),
     .C_RD_FREQ(1),
-    .C_RD_PNTR_WIDTH(16),
+    .C_RD_PNTR_WIDTH(14),
     .C_UNDERFLOW_LOW(0),
     .C_USE_DOUT_RST(1),
     .C_USE_ECC(0),
@@ -305,9 +305,9 @@ output wire prog_full;
     .din(din),
     .wr_en(wr_en),
     .rd_en(rd_en),
-    .prog_empty_thresh(16'B0),
-    .prog_empty_thresh_assert(16'B0),
-    .prog_empty_thresh_negate(16'B0),
+    .prog_empty_thresh(14'B0),
+    .prog_empty_thresh_assert(14'B0),
+    .prog_empty_thresh_negate(14'B0),
     .prog_full_thresh(16'B0),
     .prog_full_thresh_assert(16'B0),
     .prog_full_thresh_negate(16'B0),

@@ -17,8 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param tcl.collectionResultDisplayLimit 0
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a75tfgg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -42,16 +40,16 @@ read_verilog -library xil_defaultlib {
   U:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/imports/XEM7310-A75/okWireOut.v
   U:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v
 }
-read_ip -quiet U:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
-set_property used_in_implementation false [get_files -all u:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc]
-set_property used_in_implementation false [get_files -all u:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all u:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_ooc.xdc]
-
 read_ip -quiet U:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/ila_0/ila_0.xci
 set_property used_in_synthesis false [get_files -all u:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all u:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all u:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc]
 set_property used_in_implementation false [get_files -all u:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc]
+
+read_ip -quiet U:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
+set_property used_in_implementation false [get_files -all u:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc]
+set_property used_in_implementation false [get_files -all u:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all u:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -64,8 +62,6 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc U:/Desktop/ECE437SP20200/lab8/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc
 set_property used_in_implementation false [get_files U:/Desktop/ECE437SP20200/lab8/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc]
 
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

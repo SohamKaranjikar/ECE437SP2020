@@ -118,15 +118,7 @@ dev.SetWireInValue(0x05, 0); #Release reset signal
 dev.UpdateWireIns();  # Update the WireIns
 
 buf = bytearray(315392)
-buf12 = bytearray(315104)
-
-buf1 = bytearray(1024*44);
-buf2 = bytearray(1024*44);
-buf3 = bytearray(1024*44);
-buf4 = bytearray(1024*44);
-buf5 = bytearray(1024*44);
-buf6 = bytearray(1024*44);
-buf7 = bytearray(1024*44);
+buf12 = bytearray(314928)
 
 while(dev.GetWireOutValue(0x24) != 1):
     dev.UpdateWireOuts()
@@ -163,72 +155,17 @@ print('READ: '+str(dev.ReadFromBlockPipeOut(0xa0, 1024, buf)))
 
 print("done")
 
-for x in range (0,315104,1):
+for x in range (0,314928,1):
     buf12[x]=buf[x]
 
-pixels = np.arange(315104).reshape(458,688).astype('uint8')
+pixels = np.arange(314928).reshape(486,648).astype('uint8')
 
 counterpix = 0
 
-for i in range (0,458,1):
-    for j in range (0,688,1):
-        pixels[457-i][j] = buf12[counterpix]
+for i in range (0,486,1):
+    for j in range (0,648,1):
+        pixels[485-i][j] = buf12[counterpix]
         counterpix += 1
 array = np.array(pixels, dtype=np.uint8)
-new_image = Image.fromarray(array)
-new_image.save('new011.png')
-
-    
-#while(1):
-#    R_W = -1
-#    FLAG = 0
-#    ADDRS = -1
-#    REG_Val = -1
-#    START_BIT = -1
-#    dev.UpdateWireIns()
-#    while(FLAG == 0):
-#        print('Type 0 for Read or 1 for Write: ')
-#        R_W = int(input())
-#        if(int(R_W) == 0):
-#            print('Reading\n')
-#            FLAG = 1
-#        elif(int(R_W) == 1):
-#            print('Writting\n')
-#            FLAG = 1
-#        else:
-#            print('Invalid Input\n')
-#    START_BIT =  0
-#    dev.SetWireInValue(0x03, START_BIT)
-#    dev.UpdateWireIns()
-#    FLAG = 0
-#    while(FLAG == 0):
-#        print('Type Address in Decimal: ')
-#        ADDRS = int(input())
-#        if(int(ADDRS)<128):
-#            print('Address is '+str(ADDRS)+'\n')
-#           FLAG = 1
-#        else:
-#            print('Invalid Address\n')
-#    if(int(R_W) == 1):    
-#        print('Type Value for Register: ')
-#        REG_Val = input()
-#        REG_Val = int(REG_Val)
-#    START_BIT = 1
-#    dev.SetWireInValue(0x00, ADDRS) #Input data for Variable 1 using mamoery spacee 0x00
-#    dev.SetWireInValue(0x01, R_W) #Input data for Variable 2 using mamoery spacee 0x01
-#    if(R_W == 1):
-#        dev.SetWireInValue(0x02, REG_Val)
-#    dev.UpdateWireIns()  # Update the WireIns
-#    time.sleep(.2)
-#    dev.SetWireInValue(0x03, START_BIT)
-#    dev.UpdateWireIns()  # Update the WireIns
-#    time.sleep(.2)
-#    dev.UpdateWireOuts()
-#    if(R_W == 0):
-#        print('Read Complete ' +str(dev.GetWireOutValue(0x22)))
-#        read_value = dev.GetWireOutValue(0x20)
-#        print('Read Value '+str(read_value)+' from register '+str(ADDRS))
-#    elif(R_W == 1):
-#        while(dev.GetWireOutValue(0x21)!=1):
-#            continue
-#        print('Write Complete')
+new_image = Image.fromarray(array, 'L')
+new_image.save('new08.png')
