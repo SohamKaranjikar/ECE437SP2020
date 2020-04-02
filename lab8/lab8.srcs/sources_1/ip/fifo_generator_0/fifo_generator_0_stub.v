@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Mon Mar 30 13:15:53 2020
+// Date        : Mon Mar 30 13:15:50 2020
 // Host        : ECEB-4022-09 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               U:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top fifo_generator_0 -prefix
+//               fifo_generator_0_ fifo_generator_0_stub.v
 // Design      : fifo_generator_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a75tfgg484-1

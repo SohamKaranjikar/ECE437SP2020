@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Tue Mar 31 09:36:05 2020
-| Host             : ECEB-4022-09 running 64-bit major release  (build 9200)
+| Date             : Wed Apr  1 02:49:28 2020
+| Host             : ECEB-4022-08 running 64-bit major release  (build 9200)
 | Command          : report_power -file BTPipeExample_power_routed.rpt -pb BTPipeExample_power_summary_routed.pb -rpx BTPipeExample_power_routed.rpx
 | Design           : BTPipeExample
 | Device           : xc7a75tfgg484-1
@@ -53,19 +53,19 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.009 |        7 |       --- |             --- |
-| Slice Logic              |     0.008 |    11092 |       --- |             --- |
-|   LUT as Logic           |     0.007 |     3764 |     47200 |            7.97 |
-|   Register               |    <0.001 |     5177 |     94400 |            5.48 |
-|   CARRY4                 |    <0.001 |      214 |     15850 |            1.35 |
+| Slice Logic              |     0.008 |    10981 |       --- |             --- |
+|   LUT as Logic           |     0.007 |     3716 |     47200 |            7.87 |
+|   Register               |    <0.001 |     5120 |     94400 |            5.42 |
+|   CARRY4                 |    <0.001 |      209 |     15850 |            1.32 |
 |   LUT as Distributed RAM |    <0.001 |      184 |     19000 |            0.97 |
 |   LUT as Shift Register  |    <0.001 |      264 |     19000 |            1.39 |
-|   BUFG                   |    <0.001 |        5 |        32 |           15.63 |
 |   F7/F8 Muxes            |    <0.001 |      203 |     63400 |            0.32 |
-|   Others                 |     0.000 |      618 |       --- |             --- |
-| Signals                  |     0.009 |     8206 |       --- |             --- |
+|   BUFG                   |    <0.001 |        4 |        32 |           12.50 |
+|   Others                 |     0.000 |      617 |       --- |             --- |
+| Signals                  |     0.009 |     8126 |       --- |             --- |
 | Block RAM                |     0.002 |     19.5 |       105 |           18.57 |
 | MMCM                     |     0.106 |        1 |         6 |           16.67 |
-| I/O                      |     0.013 |       70 |       285 |           24.56 |
+| I/O                      |     0.013 |       71 |       285 |           24.91 |
 | Static Power             |     0.098 |          |           |                 |
 | Total                    |     0.246 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
@@ -152,15 +152,15 @@ Table of Contents
 +-------------------------------------+-----------+
 | BTPipeExample                       |     0.147 |
 |   ClockGenerator1                   |     0.005 |
-|   FIFO_for_Counter_BTPipe_Interface |     0.001 |
-|     U0                              |     0.001 |
-|       inst_fifo_gen                 |     0.001 |
+|   FIFO_for_Counter_BTPipe_Interface |     0.002 |
+|     U0                              |     0.002 |
+|       inst_fifo_gen                 |     0.002 |
 |   dbg_hub                           |     0.002 |
 |     inst                            |     0.002 |
 |       BSCANID.u_xsdbm_id            |     0.002 |
-|   hostIF                            |     0.133 |
-|     core0                           |     0.017 |
-|       core0                         |     0.017 |
+|   hostIF                            |     0.132 |
+|     core0                           |     0.016 |
+|       core0                         |     0.016 |
 |   ila_sample12                      |     0.004 |
 |     inst                            |     0.004 |
 |       ila_core_inst                 |     0.004 |

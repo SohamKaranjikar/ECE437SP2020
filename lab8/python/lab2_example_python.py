@@ -41,7 +41,7 @@ print("----------------------------------------------------")
 # We will use WireIn instructions to send data to the FPGA
 dev.UpdateWireOuts()
 regaddress = [1,2,3,4,39,42,43,44,57,58,59,60,68,69,80,83,97,98,100,101,102,103,106,107,108,109,110,117]
-regvalues = [232,1,0,0,1,232,1,0,3,44,240,10,2,9,2,187,240,10,112,98,34,64,94,110,91,82,80,91]
+regvalues = [232,1,0,0,1,232,255,0,3,44,240,10,2,9,2,187,240,10,112,98,34,64,94,110,91,82,80,91]
 R_W = -1
 FLAG = 0
 ADDRS = -1
@@ -124,7 +124,7 @@ while(dev.GetWireOutValue(0x24) != 1):
     dev.UpdateWireOuts()
     continue
 
-print('READ: '+str(dev.ReadFromBlockPipeOut(0xa0, 1024, buf)))
+print('READ: '+str(dev.ReadFromBlockPipeOut(0xa0, 256, buf)))
 #dev.ReadFromBlockPipeOut(0xa0, 1024, buf2);  # Read data from BT PipeOut
 #dev.ReadFromBlockPipeOut(0xa0, 1024, buf3);
 #dev.ReadFromBlockPipeOut(0xa0, 1024, buf4);
@@ -154,18 +154,19 @@ print('READ: '+str(dev.ReadFromBlockPipeOut(0xa0, 1024, buf)))
 #        print(buf12[i])
 
 print("done")
-
+#
 for x in range (0,314928,1):
     buf12[x]=buf[x]
+    
 
-pixels = np.arange(314928).reshape(486,648).astype('uint8')
+pixels = np.arange(648*486).reshape(486,648).astype('uint8')
 
 counterpix = 0
 
 for i in range (0,486,1):
     for j in range (0,648,1):
-        pixels[485-i][j] = buf12[counterpix]
-        counterpix += 1
+        pixels[i][j] = buf12[i*648+j]
 array = np.array(pixels, dtype=np.uint8)
 new_image = Image.fromarray(array, 'L')
-new_image.save('new08.png')
+new_image.show()
+dev.Close

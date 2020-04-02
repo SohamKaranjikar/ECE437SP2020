@@ -74,8 +74,8 @@ set rc [catch {
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet U:/Desktop/ECE437SP20200/lab8/lab8.runs/synth_1/BTPipeExample.dcp
-  read_ip -quiet U:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/ila_0/ila_0.xci
   read_ip -quiet U:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
+  read_ip -quiet U:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/ip/ila_0/ila_0.xci
   read_xdc U:/Desktop/ECE437SP20200/lab8/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc
   link_design -top BTPipeExample -part xc7a75tfgg484-1
   close_msg_db -file init_design.pb

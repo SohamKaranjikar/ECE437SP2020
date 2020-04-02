@@ -13,15 +13,13 @@ module BTPipeExample(
     output CVM300_SPI_IN,	
     input CVM300_SPI_OUT,	
     output CVM300_SPI_CLK,	
-    input [7:0] CVM300_D,	
-    output CVM300_Enable_LVDS,	
-    input CVM300_CLK_OUT,	
-    input CVM300_Line_valid,	
-    input CVM300_Data_valid,	
+    inout [9:0] CVM300_D,
+    inout CVM300_CLK_OUT,	
+    inout CVM300_Line_valid,	
+    inout CVM300_Data_valid,	
     output CVM300_CLK_IN,	
     output CVM300_FRAME_REQ	
-    );	
-    assign CVM300_Enable_LVDS = 1'b0;	
+    );		
     wire okClk;            //These are FrontPanel wires needed to IO communication    	
     wire [112:0]    okHE;  //These are FrontPanel wires needed to IO communication    	
     wire [64:0]     okEH;  //These are FrontPanel wires needed to IO communication     	
@@ -239,15 +237,13 @@ module BTPipeExample(
             end	
             	
             8'd9:   begin	
-                CVM300_FRAME_REQ_R <= 1'b0;	
-                if(CVM300_Data_valid == 1'b1) begin	
-                    CVM_State <= 8'd10;	
-                end	
+                CVM300_FRAME_REQ_R <= 1'b1;	
+                CVM_State <= 8'd10;	
             end	
             	
             8'd10:   begin	
                 CVM300_FRAME_REQ_R <= 1'b0; 	
-                CVM_State <= 8'd10;	
+                CVM_State <= 8'd10;
             end	
         endcase            	
     end	
@@ -262,77 +258,77 @@ module BTPipeExample(
         write_enable_counter <= 0;	
     end 	
     	
-    always @(negedge CVM300_CLK_OUT) begin	
+//    always @(negedge CVM300_CLK_OUT) begin	
         	
-        case(CVM_State2)	
+//        case(CVM_State2)	
         	
-            8'd0:   begin	
-                if(CVM_State == 8'd10) begin	
-                    write_enable <= 1'b1;	
-                    if(pixelcounter >= 19'd315392) begin	
-                        CVM_State2 <= 8'd4;	
-                    end	
-                    else if(CVM300_Data_valid == 1'b1) begin	
-                        CVM_4Pixels[7:0] <= CVM300_D[7:0];	
-                        pixelcounter <= pixelcounter + 18'd1;	
-                        CVM_State2 <= 8'd0;	
-                    end	
-                    else begin	
-                        CVM_State2 <= 8'd0;	
-                    end	
-                 end	
-                 else begin	
-                    CVM_State2 <= 8'd0;	
-                    write_enable <= 1'b0;	
-                 end	
+//            8'd0:   begin	
+//                if(CVM_State == 8'd10) begin	
+//                    write_enable <= 1'b1;	
+//                    if(pixelcounter >= 19'd315392) begin	
+//                        CVM_State2 <= 8'd4;	
+//                    end	
+//                    else if(CVM300_Data_valid == 1'b1) begin	
+//                        CVM_4Pixels[7:0] <= CVM300_D[7:0];	
+//                        pixelcounter <= pixelcounter + 18'd1;	
+//                        CVM_State2 <= 8'd0;	
+//                    end	
+//                    else begin	
+//                        CVM_State2 <= 8'd0;	
+//                    end	
+//                 end	
+//                 else begin	
+//                    CVM_State2 <= 8'd0;	
+//                    write_enable <= 1'b0;	
+//                 end	
                  
-            end	
+//            end	
             	
-            8'd1:   begin	
-                if(CVM300_Data_valid == 1'b1) begin	
-                    CVM_4Pixels[15:8] <= CVM300_D[7:0];	
-                    pixelcounter <= pixelcounter + 18'd1;	
-                    CVM_State2 <= 8'd2;	
-                end	
-                else begin	
-                        CVM_State2 <= 8'd1;	
-                    end	
-            end	
+//            8'd1:   begin	
+//                if(CVM300_Data_valid == 1'b1) begin	
+//                    CVM_4Pixels[15:8] <= CVM300_D[7:0];	
+//                    pixelcounter <= pixelcounter + 18'd1;	
+//                    CVM_State2 <= 8'd2;	
+//                end	
+//                else begin	
+//                        CVM_State2 <= 8'd1;	
+//                    end	
+//            end	
             	
-            8'd2:   begin	
-                if(CVM300_Data_valid == 1'b1) begin	
-                    CVM_4Pixels[23:16] <= CVM300_D[7:0];	
-                    pixelcounter <= pixelcounter + 18'd1;	
-                    CVM_State2 <= 8'd3;	
-                end	
-                else begin	
-                        CVM_State2 <= 8'd2;	
-                end	
-            end	
+//            8'd2:   begin	
+//                if(CVM300_Data_valid == 1'b1) begin	
+//                    CVM_4Pixels[23:16] <= CVM300_D[7:0];	
+//                    pixelcounter <= pixelcounter + 18'd1;	
+//                    CVM_State2 <= 8'd3;	
+//                end	
+//                else begin	
+//                        CVM_State2 <= 8'd2;	
+//                end	
+//            end	
             	
-            8'd3:   begin	
-                 if(CVM300_Data_valid == 1'b1) begin	
-                    CVM_4Pixels[31:24] <= CVM300_D[7:0];	
-                    pixelcounter <= pixelcounter + 18'd1;	
-                    CVM_State2 <= 8'd0;	
-                    write_enable <= 1'b1;	
-                end	
-                else begin	
-                        CVM_State2 <= 8'd3;	
-                        write_enable <= 1'b0;	
-                    end	
+//            8'd3:   begin	
+//                 if(CVM300_Data_valid == 1'b1) begin	
+//                    CVM_4Pixels[31:24] <= CVM300_D[7:0];	
+//                    pixelcounter <= pixelcounter + 18'd1;	
+//                    CVM_State2 <= 8'd0;	
+//                    write_enable <= 1'b1;	
+//                end	
+//                else begin	
+//                        CVM_State2 <= 8'd3;	
+//                        write_enable <= 1'b0;	
+//                    end	
                 	
-            end	
+//            end	
             	
-            8'd4:   begin	
-                imgreadcompleter <= 1'b1;	
-                pixelcounter <= 18'd0;	
-                write_enable <= 1'b0;	
-                CVM_State2 <= 8'd4;	
-            end	
-        endcase	
+//            8'd4:   begin	
+//                imgreadcompleter <= 1'b1;	
+//                pixelcounter <= 18'd0;	
+//                write_enable <= 1'b0;	
+//                CVM_State2 <= 8'd4;	
+//            end	
+//        endcase	
         	
-    end	
+//    end	
                                          	
 //    always @(posedge FSM_Clk) begin     	
 //        button_reg <= ~button;   // Grab the values from the button, complement and store them in register                	
@@ -395,8 +391,8 @@ module BTPipeExample(
         .wr_rst(write_reset),	
         .rd_clk(okClk),	
         .rd_rst(read_reset),	
-        .din(CVM_4Pixels[7:0]),	
-        .wr_en(CVM300_Data_valid && write_enable),	
+        .din(CVM300_D[7:0]),	
+        .wr_en(CVM300_Data_valid & CVM300_Line_valid),	
         .rd_en(FIFO_read_enable),	
         .dout(FIFO_data_out),	
         .full(FIFO_full),	
