@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Apr  1 02:45:38 2020
-# Process ID: 11768
+# Start of session at: Tue Apr  7 11:32:06 2020
+# Process ID: 8356
 # Current directory: U:/Desktop/ECE437SP20200/lab8/lab8.runs/synth_1
 # Command line: vivado.exe -log BTPipeExample.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BTPipeExample.tcl
 # Log file: U:/Desktop/ECE437SP20200/lab8/lab8.runs/synth_1/BTPipeExample.vds
@@ -15,12 +15,12 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13144 
+INFO: Helper process launched with PID 7576 
 WARNING: [Synth 8-2611] redeclaration of ansi port writecomplete is not allowed [U:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/imports/Downloads/I2C_Transmit.v:26]
 WARNING: [Synth 8-2611] redeclaration of ansi port readcomplete is not allowed [U:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/imports/Downloads/I2C_Transmit.v:26]
 WARNING: [Synth 8-2490] overwriting previous definition of module xpm_cdc_async_rst [U:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/imports/XEM7310-A75/okCoreHarness.v:15361]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 502.445 ; gain = 106.957
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 428.102 ; gain = 108.102
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'BTPipeExample' [U:/Desktop/ECE437SP20200/lab8/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:2]
 	Parameter endPt_count bound to: 6 - type: integer 
@@ -400,7 +400,7 @@ WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[83]
 WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[82]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 571.363 ; gain = 175.875
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 496.781 ; gain = 176.781
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -413,10 +413,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 571.363 ; gain = 175.875
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 496.781 ; gain = 176.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 571.363 ; gain = 175.875
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 496.781 ; gain = 176.781
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 147 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -540,15 +540,15 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/BTPipeExample_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [U:/Desktop/ECE437SP20200/lab8/lab8.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [U:/Desktop/ECE437SP20200/lab8/lab8.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 921.625 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 846.949 ; gain = 0.000
 Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
 Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BTPipeExample_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/BTPipeExample_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 921.625 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 846.949 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 921.625 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 846.949 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 98 instances were transformed.
   IBUFG => IBUF: 1 instances
@@ -559,18 +559,18 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 8 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 921.625 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 921.625 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 846.949 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 846.949 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'FIFO_for_Counter_BTPipe_Interface' at clock pin 'rd_clk' is different from the actual clock period '9.920', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 921.625 ; gain = 526.137
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 846.949 ; gain = 526.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a75tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 921.625 ; gain = 526.137
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 846.949 ; gain = 526.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -579,7 +579,7 @@ Applied set_property DONT_TOUCH = true for FIFO_for_Counter_BTPipe_Interface. (c
 Applied set_property DONT_TOUCH = true for ila_sample12. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for hostIF/core0/core0/\a0/cb0 /U0/\inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 921.625 ; gain = 526.137
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 846.949 ; gain = 526.949
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'SPI_Transmit'
 INFO: [Synth 8-5546] ROM "SPI_EN0" won't be mapped to RAM because it is too sparse
@@ -688,7 +688,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'CVM_State_reg' using encoding 'one-hot' in module 'BTPipeExample'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 921.625 ; gain = 526.137
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 846.949 ; gain = 526.949
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -949,7 +949,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire20/\w
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[22] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 921.625 ; gain = 526.137
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:35 . Memory (MB): peak = 846.949 ; gain = 526.949
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -963,13 +963,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst' to pin 'hostIF/core0/core0/a0/l62a5479e7989ce7f4d5507c695cc69cf_reg/Q'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 921.625 ; gain = 526.137
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:43 . Memory (MB): peak = 846.949 ; gain = 526.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 925.387 ; gain = 529.898
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:43 . Memory (MB): peak = 846.949 ; gain = 526.949
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -981,7 +981,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:43 . Memory (MB): peak = 927.414 ; gain = 531.926
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 847.691 ; gain = 527.691
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1005,7 +1005,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 927.414 ; gain = 531.926
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:45 . Memory (MB): peak = 847.691 ; gain = 527.691
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1018,7 +1018,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 927.414 ; gain = 531.926
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:45 . Memory (MB): peak = 847.691 ; gain = 527.691
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1030,25 +1030,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 927.414 ; gain = 531.926
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:45 . Memory (MB): peak = 847.691 ; gain = 527.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 927.414 ; gain = 531.926
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:45 . Memory (MB): peak = 847.691 ; gain = 527.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 927.414 ; gain = 531.926
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:45 . Memory (MB): peak = 847.691 ; gain = 527.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 927.414 ; gain = 531.926
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:45 . Memory (MB): peak = 847.691 ; gain = 527.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1096,17 +1096,17 @@ Report Cell Usage:
 |28    |OBUFT            |     2|
 +------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 927.414 ; gain = 531.926
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:45 . Memory (MB): peak = 847.691 ; gain = 527.691
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 642 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:35 . Memory (MB): peak = 927.414 ; gain = 181.664
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 927.414 ; gain = 531.926
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 847.691 ; gain = 177.523
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:45 . Memory (MB): peak = 847.691 ; gain = 527.691
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 179 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 927.414 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 847.691 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 98 instances were transformed.
   IBUFG => IBUF: 1 instances
@@ -1120,10 +1120,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 379 Infos, 317 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 927.414 ; gain = 533.656
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 927.414 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 847.691 ; gain = 529.410
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 847.691 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'U:/Desktop/ECE437SP20200/lab8/lab8.runs/synth_1/BTPipeExample.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file BTPipeExample_utilization_synth.rpt -pb BTPipeExample_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr  1 02:46:40 2020...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  7 11:33:04 2020...

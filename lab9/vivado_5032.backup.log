@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar 27 03:12:26 2020
+# Process ID: 5032
+# Current directory: C:/temp/lab8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8992 C:\temp\lab8\lab8.xpr
+# Log file: C:/temp/lab8/vivado.log
+# Journal file: C:/temp/lab8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/temp/lab8/lab8.xpr
+INFO: [Project 1-313] Project file moved from 'U:/Desktop/ECE437SP20200/lab8' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 801.070 ; gain = 195.676
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 27 03:13:10 2020] Launched synth_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log
+[Fri Mar 27 03:13:10 2020] Launched impl_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 27 03:23:02 2020] Launched synth_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log
+[Fri Mar 27 03:23:02 2020] Launched impl_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 27 03:29:01 2020] Launched synth_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log
+[Fri Mar 27 03:29:01 2020] Launched impl_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 27 03:34:53 2020] Launched synth_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log
+[Fri Mar 27 03:34:53 2020] Launched impl_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 27 03:38:14 2020] Launched impl_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 27 03:48:52 2020] Launched synth_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log
+[Fri Mar 27 03:48:52 2020] Launched impl_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 27 03:55:30 2020] Launched synth_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log
+[Fri Mar 27 03:55:30 2020] Launched impl_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 27 04:03:23 2020] Launched synth_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log
+[Fri Mar 27 04:03:23 2020] Launched impl_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 27 04:12:28 2020] Launched synth_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log
+[Fri Mar 27 04:12:28 2020] Launched impl_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 27 04:53:15 2020] Launched synth_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log
+[Fri Mar 27 04:53:15 2020] Launched impl_1...
+Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log

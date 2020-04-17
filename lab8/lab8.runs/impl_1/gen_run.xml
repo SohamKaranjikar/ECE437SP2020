@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a75tfgg484-1" LaunchTime="1585727135">
-  <File Type="BITSTR-BMM" Name="BTPipeExample_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="BTPipeExample_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="BTPipeExample_timing_summary_init.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7a75tfgg484-1" LaunchTime="1586277123">
   <File Type="ROUTE-PWR" Name="BTPipeExample_power_routed.rpt"/>
   <File Type="PA-TCL" Name="BTPipeExample.tcl"/>
-  <File Type="OPT-TIMING" Name="BTPipeExample_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="BTPipeExample_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="BTPipeExample_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="BTPipeExample_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="BTPipeExample_reports.tcl"/>
+  <File Type="OPT-DCP" Name="BTPipeExample_opt.dcp"/>
   <File Type="OPT-DRC" Name="BTPipeExample_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="BTPipeExample.hwdef"/>
   <File Type="PWROPT-DCP" Name="BTPipeExample_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="BTPipeExample_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="BTPipeExample_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="BTPipeExample_placed.dcp"/>
   <File Type="PLACE-IO" Name="BTPipeExample_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="BTPipeExample_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="BTPipeExample_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="BTPipeExample_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="BTPipeExample_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="BTPipeExample_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="BTPipeExample_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="BTPipeExample.bgn"/>
-  <File Type="PLACE-TIMING" Name="BTPipeExample_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="BTPipeExample_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="BTPipeExample.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="BTPipeExample_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="BTPipeExample_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="BTPipeExample_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="BTPipeExample.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="BTPipeExample_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="BTPipeExample_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="BTPipeExample_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="BTPipeExample_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="BTPipeExample_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="BTPipeExample_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="BTPipeExample.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="BTPipeExample_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="BTPipeExample.mmi"/>
+  <File Type="BITSTR-LTX" Name="BTPipeExample.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="BTPipeExample_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="BTPipeExample.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="BTPipeExample_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="BTPipeExample.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="BTPipeExample_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="BTPipeExample.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="BTPipeExample_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="BTPipeExample_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="BTPipeExample_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="BTPipeExample_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="BTPipeExample_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="BTPipeExample_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="BTPipeExample_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="BTPipeExample_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="BTPipeExample_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="BTPipeExample_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="BTPipeExample_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="BTPipeExample_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="BTPipeExample_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="BTPipeExample_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="BTPipeExample_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="BTPipeExample_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="BTPipeExample_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="BTPipeExample_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="BTPipeExample.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="BTPipeExample_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="BTPipeExample.rbt"/>
   <File Type="BITSTR-NKY" Name="BTPipeExample.nky"/>
   <File Type="BG-DRC" Name="BTPipeExample.drc"/>

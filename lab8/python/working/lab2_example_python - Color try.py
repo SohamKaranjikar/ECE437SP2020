@@ -15,7 +15,7 @@ import numpy as np
 # load the bit file in the FPGA
 dev = ok.okCFrontPanel()  # define a device for FrontPanel communication
 SerialStatus=dev.OpenBySerial("")      # open USB communicaiton with the OK board
-ConfigStatus=dev.ConfigureFPGA("BTPipeExample.bit"); # Configure the FPGA with this bit file
+ConfigStatus=dev.ConfigureFPGA("BTPipeExampleWorking.bit"); # Configure the FPGA with this bit file
 
 # Check if FrontPanel is initialized correctly and if the bit file is loaded.
 # Otherwise terminate the program
@@ -41,7 +41,7 @@ print("----------------------------------------------------")
 # We will use WireIn instructions to send data to the FPGA
 dev.UpdateWireOuts()
 regaddress = [1,2,3,4,39,42,43,44,57,58,59,60,68,69,80,83,97,98,100,101,102,103,106,107,108,109,110,117]
-regvalues = [232,1,0,0,0,232,232,0,3,44,240,10,2,9,2,187,240,10,112,98,34,64,94,110,91,82,80,91]
+regvalues = [232,1,0,0,0,232,1,0,3,44,240,10,2,9,2,187,240,10,112,98,34,64,94,110,91,82,80,91]
 R_W = -1
 FLAG = 0
 ADDRS = -1

@@ -391,7 +391,7 @@ module BTPipeExample(
         .wr_rst(write_reset),	
         .rd_clk(okClk),	
         .rd_rst(read_reset),	
-        .din(CVM300_D[7:0]),	
+        .din({24'd0,CVM300_D[9:2]}),	
         .wr_en(CVM300_Data_valid & CVM300_Line_valid),	
         .rd_en(FIFO_read_enable),	
         .dout(FIFO_data_out),	
