@@ -190,11 +190,14 @@ pixelVals = [[100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 1
  1, 2, 2, 2]]
  
 yaxis = np.array([])
-xaxis = np.arange(0,180,6)
+xaxis = np.array([])
 
 for i in range(len(pixelVals)):
-    yaxis = np.append(yaxis,np.mean(pixelVals[i]))
+    xaxis = np.append(xaxis,np.mean(pixelVals[len(pixelVals)-1-i]))
+    yaxis = np.append(yaxis,np.std(pixelVals[len(pixelVals)-1-i]))
+yaxis = xaxis/yaxis
 print(xaxis)
 print(yaxis)
 
 plt.plot(xaxis,yaxis)
+plt.show()
