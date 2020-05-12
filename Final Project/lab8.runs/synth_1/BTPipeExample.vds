@@ -1,0 +1,1283 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 11 22:31:38 2020
+# Process ID: 15504
+# Current directory: U:/Desktop/ECE437SP20200/Final Project/lab8.runs/synth_1
+# Command line: vivado.exe -log BTPipeExample.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BTPipeExample.tcl
+# Log file: U:/Desktop/ECE437SP20200/Final Project/lab8.runs/synth_1/BTPipeExample.vds
+# Journal file: U:/Desktop/ECE437SP20200/Final Project/lab8.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source BTPipeExample.tcl -notrace
+Command: synth_design -top BTPipeExample -part xc7a75tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14196 
+WARNING: [Synth 8-2611] redeclaration of ansi port writecomplete is not allowed [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/I2C_Transmit.v:26]
+WARNING: [Synth 8-2611] redeclaration of ansi port readcomplete is not allowed [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/I2C_Transmit.v:26]
+WARNING: [Synth 8-2490] overwriting previous definition of module xpm_cdc_async_rst [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/XEM7310-A75/okCoreHarness.v:15361]
+WARNING: [Synth 8-976] ILA_Clk has already been declared [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:133]
+WARNING: [Synth 8-2654] second declaration of ILA_Clk ignored [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:133]
+INFO: [Synth 8-994] ILA_Clk is declared here [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:90]
+INFO: [Synth 8-994] FSM_Clk is declared here [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:90]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 427.359 ; gain = 108.469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'BTPipeExample' [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:2]
+	Parameter endPt_count bound to: 7 - type: integer 
+	Parameter STATE_INIT bound to: 8'b00000000 
+	Parameter STATE_RESET bound to: 8'b00000001 
+	Parameter STATE_DELAY bound to: 8'b00000010 
+	Parameter STATE_RESET_FINISHED bound to: 8'b00000011 
+	Parameter STATE_ENABLE_WRITING bound to: 8'b00000100 
+	Parameter STATE_COUNT bound to: 8'b00000101 
+	Parameter STATE_FINISH bound to: 8'b00000110 
+INFO: [Synth 8-6157] synthesizing module 'okHost' [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/XEM7310-A75/okLibrary.v:10]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (2#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
+INFO: [Synth 8-6157] synthesizing module 'IBUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20852]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFG' (3#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20852]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26837]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 9.920000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 54.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (4#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26837]
+WARNING: [Synth 8-350] instance 'mmcm0' of module 'MMCME2_BASE' requires 18 connections, but only 6 given [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/XEM7310-A75/okLibrary.v:53]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (5#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'GND' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4950]
+INFO: [Synth 8-6155] done synthesizing module 'GND' (6#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4950]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:53064]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (7#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:53064]
+INFO: [Synth 8-6157] synthesizing module 'LUT5' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5' (8#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
+INFO: [Synth 8-6157] synthesizing module 'LUT6' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6' (9#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized0' (9#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (10#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (11#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized1' (11#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized0' (11#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized1' (11#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (12#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (12#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized2' (12#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized3' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized3' (12#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26416]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (13#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26416]
+INFO: [Synth 8-6157] synthesizing module 'FDSE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4107]
+INFO: [Synth 8-6155] done synthesizing module 'FDSE' (14#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:4107]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:968]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (15#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:968]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_v13_2_0' [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/XEM7310-A75/okCoreHarness.v:15469]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/XEM7310-A75/okCoreHarness.v:15982]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/XEM7310-A75/okCoreHarness.v:15983]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/XEM7310-A75/okCoreHarness.v:15984]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/XEM7310-A75/okCoreHarness.v:15985]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized2' (15#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (15#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized1' (15#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26450]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (15#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26488]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (15#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized3' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized3' (15#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized4' (15#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT1__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26416]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1__parameterized0' (15#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26416]
+INFO: [Synth 8-6157] synthesizing module 'FDPE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
+INFO: [Synth 8-6155] done synthesizing module 'FDPE' (16#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3755]
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (17#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3755]
+INFO: [Synth 8-6157] synthesizing module 'RAMB18E1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:49848]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1' (18#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:49848]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (18#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/XEM7310-A75/okCoreHarness.v:17097]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/XEM7310-A75/okCoreHarness.v:15361]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/XEM7310-A75/okCoreHarness.v:15371]
+INFO: [Synth 8-6157] synthesizing module 'FDPE__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
+INFO: [Synth 8-6155] done synthesizing module 'FDPE__parameterized0' (18#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (19#1) [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/XEM7310-A75/okCoreHarness.v:15361]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized4' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized5' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized5' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized6' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized6' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26530]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized7' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized7' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized8' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized8' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized9' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized9' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized10' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized10' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized11' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized11' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized5' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized5' (19#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26576]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_v13_2_0' (20#1) [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/XEM7310-A75/okCoreHarness.v:15469]
+INFO: [Synth 8-6157] synthesizing module 'DNA_PORT' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3039]
+INFO: [Synth 8-6155] done synthesizing module 'DNA_PORT' (22#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3039]
+INFO: [Synth 8-6157] synthesizing module 'FDCE__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3755]
+INFO: [Synth 8-6155] done synthesizing module 'FDCE__parameterized0' (22#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3755]
+INFO: [Synth 8-6157] synthesizing module 'FDPE__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
+INFO: [Synth 8-6155] done synthesizing module 'FDPE__parameterized1' (22#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized12' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized12' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized0' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized13' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized13' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized14' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized14' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized1' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized2' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized3' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized3' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized15' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized15' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized4' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized4' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized16' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized16' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized5' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized5' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized17' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized17' (23#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'RAM128X1S' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:44873]
+INFO: [Synth 8-6155] done synthesizing module 'RAM128X1S' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:44873]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized6' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized6' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized18' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized18' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized7' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized7' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'RAM32M' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:45120]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:45120]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized8' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized8' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized9' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized9' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized10' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized10' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized11' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized11' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized19' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized19' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized20' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized20' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized12' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized12' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized13' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized13' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized21' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized21' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized14' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized14' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized15' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized15' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized16' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized16' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized22' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized22' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized17' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized17' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized18' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized18' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized19' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized19' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized20' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized20' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized23' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized23' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized24' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized24' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized21' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized21' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26647]
+INFO: [Synth 8-6157] synthesizing module 'RAMB18E1__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:49848]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1__parameterized0' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:49848]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized25' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized25' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized26' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized26' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized27' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized27' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized28' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized28' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized29' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized29' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized30' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized30' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized31' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized31' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized32' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized32' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized33' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized34' (25#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-350] instance 'hostIF' of module 'okHost' requires 9 connections, but only 7 given [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:31]
+	Parameter STATE_INIT bound to: 8'b00000000 
+	Parameter N bound to: 7 - type: integer 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter STATE_INIT bound to: 8'b00000000 
+WARNING: [Synth 8-6014] Unused sequential element error_bit_reg was removed.  [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/TEMP_Transmit.v:1006]
+INFO: [Synth 8-155] case statement is not full and has no default [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:207]
+WARNING: [Synth 8-689] width (7) of port connection 'ep_dataout' does not match port width (32) of module 'okWireIn' [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:386]
+WARNING: [Synth 8-689] width (1) of port connection 'ep_dataout' does not match port width (32) of module 'okWireIn' [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:390]
+WARNING: [Synth 8-689] width (8) of port connection 'ep_dataout' does not match port width (32) of module 'okWireIn' [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:394]
+WARNING: [Synth 8-689] width (1) of port connection 'ep_dataout' does not match port width (32) of module 'okWireIn' [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:398]
+WARNING: [Synth 8-689] width (1) of port connection 'ep_dataout' does not match port width (32) of module 'okWireIn' [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:406]
+WARNING: [Synth 8-689] width (1) of port connection 'ep_dataout' does not match port width (32) of module 'okWireIn' [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:409]
+WARNING: [Synth 8-689] width (1) of port connection 'ep_dataout' does not match port width (32) of module 'okWireIn' [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:413]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:418]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_sample12'. This will prevent further optimization [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:418]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'FIFO_for_Counter_BTPipe_Interface'. This will prevent further optimization [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:331]
+WARNING: [Synth 8-6014] Unused sequential element triggerila_reg was removed.  [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:264]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[112]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[111]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[110]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[109]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[108]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[107]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[106]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[105]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[104]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[103]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[102]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[101]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[100]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[99]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[98]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[97]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[96]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[95]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[94]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[93]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[92]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[91]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[90]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[89]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[88]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[87]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[86]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[85]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[84]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[83]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[82]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[81]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[80]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[79]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[78]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[77]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[76]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[75]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[74]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[73]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[72]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[71]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[70]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[69]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[68]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[67]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[66]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[65]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[64]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[63]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[62]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[61]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[60]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[59]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[58]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[57]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[56]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[55]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[54]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[53]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[52]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[51]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[50]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[49]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[48]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[47]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[46]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[45]
+WARNING: [Synth 8-3331] design okWireIn has unconnected port okHE[42]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[112]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[111]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[110]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[109]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[108]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[107]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[106]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[105]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[104]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[103]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[102]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[101]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[100]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[99]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[98]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[97]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[96]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[95]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[94]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[93]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[92]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[91]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[90]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[89]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[88]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[87]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[86]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[85]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[84]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[83]
+WARNING: [Synth 8-3331] design okWireOut has unconnected port okHE[82]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 505.773 ; gain = 186.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 505.773 ; gain = 186.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 505.773 ; gain = 186.883
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 147 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a75tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [u:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
+Finished Parsing XDC File [u:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_sample12'
+Parsing XDC File [u:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'FIFO_for_Counter_BTPipe_Interface'
+Finished Parsing XDC File [u:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'FIFO_for_Counter_BTPipe_Interface'
+Parsing XDC File [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:72]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'okUH[0]' is not supported, ignoring it [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:73]
+INFO: [Timing 38-2] Deriving generated clocks [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'CVM300_LVDS_CLK_P'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'CVM300-LVDS_CLK_P'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'CVM300_LVDS_CLK_N'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'CVM300_LVDS_CLK_N'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'CVM300_Enable_LVDS'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'CVM300_Enable_LVDS'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[0]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:239]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[0]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:240]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[1]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:242]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[1]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:243]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[2]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:245]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[2]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:246]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[3]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:248]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[3]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:249]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[4]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:251]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[4]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:252]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[5]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:254]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[5]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:255]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[6]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:257]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[6]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:258]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[7]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:260]
+WARNING: [Vivado 12-584] No ports matched 'USER_33[7]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:261]
+WARNING: [Vivado 12-584] No ports matched 'USER_SRCC_P'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:264]
+WARNING: [Vivado 12-584] No ports matched 'USER_SRCC_P'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:265]
+WARNING: [Vivado 12-584] No ports matched 'USER_SRCC_N'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:267]
+WARNING: [Vivado 12-584] No ports matched 'USER_SRCC_N'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:268]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[0]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:273]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[0]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:274]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[1]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:276]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[1]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:277]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[2]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:279]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[2]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:280]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[3]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:282]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[3]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:283]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[4]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:285]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[4]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:286]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[5]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:288]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[5]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:289]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[6]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:291]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[6]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:292]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[7]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:294]
+WARNING: [Vivado 12-584] No ports matched 'USER_25[7]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:295]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A1'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:300]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A1'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:301]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A2'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:303]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A2'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:304]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A3'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:306]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A3'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:307]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A4'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:309]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A4'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:310]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A7'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:312]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A7'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:313]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A8'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:315]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A8'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:316]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A9'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:318]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A9'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:319]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A10'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:321]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_A10'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:322]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B1'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:327]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B1'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:328]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B2'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:330]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B2'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:331]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B3'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:333]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B3'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:334]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B4'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:336]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B4'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:337]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B7'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:339]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B7'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:340]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B8'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:342]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B8'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:343]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B9'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:345]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B9'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:346]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B10'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:348]
+WARNING: [Vivado 12-584] No ports matched 'PMOD_B10'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:349]
+WARNING: [Vivado 12-584] No ports matched 'I2C_SDA_1'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:393]
+WARNING: [Vivado 12-584] No ports matched 'I2C_SDA_1'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:394]
+WARNING: [Vivado 12-584] No ports matched 'I2C_SCL_1'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:396]
+WARNING: [Vivado 12-584] No ports matched 'I2C_SCL_1'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:397]
+WARNING: [Vivado 12-584] No ports matched 'AD7156_OUT2'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:410]
+WARNING: [Vivado 12-584] No ports matched 'AD7156_OUT2'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:411]
+WARNING: [Vivado 12-584] No ports matched 'AD7156_OUT1'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:413]
+WARNING: [Vivado 12-584] No ports matched 'AD7156_OUT1'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:414]
+WARNING: [Vivado 12-584] No ports matched 's_LED[0]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:418]
+WARNING: [Vivado 12-584] No ports matched 's_LED[0]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:419]
+WARNING: [Vivado 12-584] No ports matched 's_LED[1]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:421]
+WARNING: [Vivado 12-584] No ports matched 's_LED[1]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:422]
+WARNING: [Vivado 12-584] No ports matched 's_LED[2]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:424]
+WARNING: [Vivado 12-584] No ports matched 's_LED[2]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:425]
+WARNING: [Vivado 12-584] No ports matched 's_LED[3]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:427]
+WARNING: [Vivado 12-584] No ports matched 's_LED[3]'. [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:428]
+Finished Parsing XDC File [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/BTPipeExample_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BTPipeExample_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/BTPipeExample_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 850.816 ; gain = 0.000
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BTPipeExample_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/BTPipeExample_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 850.816 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 850.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 98 instances were transformed.
+  IBUFG => IBUF: 1 instances
+  IBUFGDS => IBUFDS: 1 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 33 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 8 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 850.816 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 850.816 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'FIFO_for_Counter_BTPipe_Interface' at clock pin 'rd_clk' is different from the actual clock period '9.920', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 850.816 ; gain = 531.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a75tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 850.816 ; gain = 531.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ila_sample12. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for FIFO_for_Counter_BTPipe_Interface. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for hostIF/core0/core0/\a0/cb0 /U0/\inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 850.816 ; gain = 531.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'SPI_Transmit'
+INFO: [Synth 8-5546] ROM "SPI_EN0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ILA_Clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'TEMP_Transmit'
+INFO: [Synth 8-5546] ROM "State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ACK_bit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "repeat_start_bit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "repeat_start_bit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "read_lsb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'read_reset_reg' into 'write_reset_reg' [U:/Desktop/ECE437SP20200/Final Project/lab8.srcs/sources_1/imports/Downloads/BTPipeExample.v:177]
+INFO: [Synth 8-5546] ROM "SPI_FSM_Clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CVM_Clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TEMP_Clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CVM_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CVM300_SYS_RES_N_R" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "startdelay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "startdelay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spistarttrigr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spistarttrigr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spistarttrig0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter_delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter_delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CVM_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CVM_State" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_INIT | 00000000000000000000000000000000000000000000000000000000000000001 |                         00000000
+                iSTATE35 | 00000000000000000000000000000000000000000000000000000000000000010 |                         00000001
+                iSTATE33 | 00000000000000000000000000000000000000000000000000000000000000100 |                         00000010
+                iSTATE32 | 00000000000000000000000000000000000000000000000000000000000001000 |                         00000011
+                iSTATE14 | 00000000000000000000000000000000000000000000000000000000000010000 |                         00000100
+                iSTATE12 | 00000000000000000000000000000000000000000000000000000000000100000 |                         00000101
+                iSTATE10 | 00000000000000000000000000000000000000000000000000000000001000000 |                         00000110
+                 iSTATE8 | 00000000000000000000000000000000000000000000000000000000010000000 |                         00000111
+                iSTATE13 | 00000000000000000000000000000000000000000000000000000000100000000 |                         00001000
+                iSTATE11 | 00000000000000000000000000000000000000000000000000000001000000000 |                         00001001
+                 iSTATE9 | 00000000000000000000000000000000000000000000000000000010000000000 |                         00001010
+                 iSTATE6 | 00000000000000000000000000000000000000000000000000000100000000000 |                         00001011
+                iSTATE55 | 00000000000000000000000000000000000000000000000000001000000000000 |                         00001100
+                iSTATE53 | 00000000000000000000000000000000000000000000000000010000000000000 |                         00001101
+                iSTATE52 | 00000000000000000000000000000000000000000000000000100000000000000 |                         00001110
+                iSTATE49 | 00000000000000000000000000000000000000000000000001000000000000000 |                         00001111
+                 iSTATE7 | 00000000000000000000000000000000000000000000000010000000000000000 |                         00010000
+                 iSTATE5 | 00000000000000000000000000000000000000000000000100000000000000000 |                         00010001
+                 iSTATE2 | 00000000000000000000000000000000000000000000001000000000000000000 |                         00010010
+                 iSTATE1 | 00000000000000000000000000000000000000000000010000000000000000000 |                         00010011
+                iSTATE51 | 00000000000000000000000000000000000000000000100000000000000000000 |                         00010100
+                iSTATE48 | 00000000000000000000000000000000000000000001000000000000000000000 |                         00010101
+                iSTATE44 | 00000000000000000000000000000000000000000010000000000000000000000 |                         00010110
+                iSTATE42 | 00000000000000000000000000000000000000000100000000000000000000000 |                         00010111
+                iSTATE47 | 00000000000000000000000000000000000000001000000000000000000000000 |                         00011000
+                iSTATE45 | 00000000000000000000000000000000000000010000000000000000000000000 |                         00011001
+                iSTATE41 | 00000000000000000000000000000000000000100000000000000000000000000 |                         00011010
+                iSTATE39 | 00000000000000000000000000000000000001000000000000000000000000000 |                         00011011
+                iSTATE29 | 00000000000000000000000000000000000010000000000000000000000000000 |                         00011100
+                iSTATE26 | 00000000000000000000000000000000000100000000000000000000000000000 |                         00011101
+                iSTATE22 | 00000000000000000000000000000000001000000000000000000000000000000 |                         00011110
+                iSTATE18 | 00000000000000000000000000000000010000000000000000000000000000000 |                         00011111
+                iSTATE50 | 00000000000000000000000000000000100000000000000000000000000000000 |                         00100000
+                iSTATE46 | 00000000000000000000000000000001000000000000000000000000000000000 |                         00100001
+                iSTATE43 | 00000000000000000000000000000010000000000000000000000000000000000 |                         00100010
+                iSTATE40 | 00000000000000000000000000000100000000000000000000000000000000000 |                         00100011
+                iSTATE31 | 00000000000000000000000000001000000000000000000000000000000000000 |                         00100100
+                iSTATE28 | 00000000000000000000000000010000000000000000000000000000000000000 |                         00100101
+                iSTATE24 | 00000000000000000000000000100000000000000000000000000000000000000 |                         00100110
+                iSTATE21 | 00000000000000000000000001000000000000000000000000000000000000000 |                         00100111
+                iSTATE27 | 00000000000000000000000010000000000000000000000000000000000000000 |                         00101000
+                iSTATE25 | 00000000000000000000000100000000000000000000000000000000000000000 |                         00101001
+                iSTATE20 | 00000000000000000000001000000000000000000000000000000000000000000 |                         00101010
+                iSTATE17 | 00000000000000000000010000000000000000000000000000000000000000000 |                         00101011
+                 iSTATE4 | 00000000000000000000100000000000000000000000000000000000000000000 |                         00101100
+                 iSTATE3 | 00000000000000000001000000000000000000000000000000000000000000000 |                         00101101
+                  iSTATE | 00000000000000000010000000000000000000000000000000000000000000000 |                         00101110
+                iSTATE60 | 00000000000000000100000000000000000000000000000000000000000000000 |                         00101111
+                iSTATE23 | 00000000000000001000000000000000000000000000000000000000000000000 |                         00110000
+                iSTATE19 | 00000000000000010000000000000000000000000000000000000000000000000 |                         00110001
+                iSTATE16 | 00000000000000100000000000000000000000000000000000000000000000000 |                         00110010
+                iSTATE15 | 00000000000001000000000000000000000000000000000000000000000000000 |                         00110011
+                 iSTATE0 | 00000000000010000000000000000000000000000000000000000000000000000 |                         00110100
+                iSTATE61 | 00000000000100000000000000000000000000000000000000000000000000000 |                         00110101
+                iSTATE58 | 00000000001000000000000000000000000000000000000000000000000000000 |                         00110110
+                iSTATE57 | 00000000010000000000000000000000000000000000000000000000000000000 |                         00110111
+                iSTATE62 | 00000000100000000000000000000000000000000000000000000000000000000 |                         00111000
+                iSTATE59 | 00000001000000000000000000000000000000000000000000000000000000000 |                         00111001
+                iSTATE56 | 00000010000000000000000000000000000000000000000000000000000000000 |                         00111010
+                iSTATE54 | 00000100000000000000000000000000000000000000000000000000000000000 |                         00111011
+                iSTATE38 | 00001000000000000000000000000000000000000000000000000000000000000 |                         00111100
+                iSTATE37 | 00010000000000000000000000000000000000000000000000000000000000000 |                         00111101
+                iSTATE36 | 00100000000000000000000000000000000000000000000000000000000000000 |                         00111110
+                iSTATE34 | 01000000000000000000000000000000000000000000000000000000000000000 |                         00111111
+                iSTATE30 | 10000000000000000000000000000000000000000000000000000000000000000 |                         01000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'SPI_Transmit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_INIT | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 |                         00000000
+               iSTATE131 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010 |                         00000001
+               iSTATE128 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100 |                         00000010
+               iSTATE127 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000 |                         00000011
+               iSTATE124 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000 |                         00000100
+               iSTATE123 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000 |                         00000101
+               iSTATE118 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000 |                         00000110
+               iSTATE117 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000 |                         00000111
+                iSTATE83 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000 |                         00001000
+                iSTATE82 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000 |                         00001001
+                iSTATE79 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000 |                         00001010
+                iSTATE78 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000 |                         00001011
+                iSTATE63 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000 |                         00001100
+                iSTATE62 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000 |                         00001101
+                iSTATE57 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000 |                         00001110
+                iSTATE56 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000 |                         00001111
+                iSTATE91 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000 |                         00010000
+                iSTATE90 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000 |                         00010001
+                iSTATE86 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000 |                         00010010
+                iSTATE84 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000 |                         00010011
+                iSTATE73 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000 |                         00010100
+                iSTATE72 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000 |                         00010101
+                iSTATE66 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000 |                         00010110
+                iSTATE64 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000 |                         00010111
+                iSTATE16 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000 |                         00011000
+                iSTATE14 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000 |                         00011001
+                iSTATE10 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000 |                         00011010
+                 iSTATE9 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000 |                         00011011
+                 iSTATE4 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000 |                         00011100
+                 iSTATE3 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000 |                         00011101
+                 iSTATE0 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000 |                         00011110
+                  iSTATE | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000 |                         00011111
+               iSTATE107 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000 |                         00100000
+               iSTATE105 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000 |                         00100001
+               iSTATE103 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000 |                         00100010
+               iSTATE101 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000 |                         00100011
+                iSTATE96 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000 |                         00100100
+                iSTATE95 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000 |                         00100101
+                iSTATE92 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000 |                         00100110
+                iSTATE60 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000 |                         01011000
+                iSTATE58 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000 |                         01011001
+                iSTATE55 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000 |                         01011010
+                iSTATE54 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000 |                         01011011
+                iSTATE43 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000 |                         01011100
+                iSTATE40 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000 |                         01011101
+                iSTATE37 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000 |                         01011110
+                iSTATE34 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000 |                         01011111
+               iSTATE133 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000 |                         01100000
+               iSTATE132 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000 |                         01100001
+               iSTATE130 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000 |                         01100010
+               iSTATE129 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000 |                         01100011
+               iSTATE126 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000 |                         01100100
+               iSTATE125 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000 |                         01100101
+               iSTATE122 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000 |                         01100110
+               iSTATE120 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000 |                         01100111
+                iSTATE87 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000 |                         01101000
+                iSTATE85 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000 |                         01101001
+                iSTATE81 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000 |                         01101010
+                iSTATE80 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000 |                         01101011
+                iSTATE67 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000 |                         01101100
+                iSTATE65 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000 |                         01101101
+                iSTATE61 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000 |                         01101110
+                iSTATE59 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000 |                         01101111
+                iSTATE94 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000 |                         01110000
+                iSTATE93 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000 |                         01110001
+                iSTATE89 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000 |                         01110010
+                iSTATE88 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000 |                         01110011
+                iSTATE76 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000 |                         01110100
+                iSTATE74 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000 |                         01110101
+                iSTATE70 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000 |                         01110110
+                iSTATE68 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000 |                         01110111
+                iSTATE18 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000 |                         01111000
+                iSTATE17 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111001
+                iSTATE12 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111010
+                iSTATE11 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111011
+                 iSTATE7 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111100
+                 iSTATE5 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111101
+                 iSTATE2 | 000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111110
+                 iSTATE1 | 000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01111111
+               iSTATE113 | 000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000000
+               iSTATE112 | 000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000001
+               iSTATE111 | 000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000010
+               iSTATE110 | 000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000011
+               iSTATE100 | 000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000100
+                iSTATE99 | 000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000101
+                iSTATE98 | 000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000110
+                iSTATE97 | 000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10000111
+                iSTATE45 | 000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001000
+                iSTATE42 | 000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001001
+                iSTATE39 | 000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001010
+                iSTATE36 | 000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001011
+                iSTATE28 | 000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001100
+                iSTATE26 | 000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001101
+                iSTATE24 | 000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001110
+                iSTATE22 | 000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10001111
+                iSTATE51 | 000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010000
+                iSTATE49 | 000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010001
+                iSTATE47 | 000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010010
+                iSTATE46 | 000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010011
+                iSTATE32 | 000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010100
+                iSTATE31 | 000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010101
+                iSTATE30 | 000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010110
+                iSTATE29 | 000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10010111
+               iSTATE155 | 000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011000
+               iSTATE153 | 000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011001
+               iSTATE151 | 000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011010
+               iSTATE149 | 000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011011
+               iSTATE143 | 000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011100
+               iSTATE141 | 000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011101
+               iSTATE139 | 000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011110
+               iSTATE138 | 000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10011111
+                iSTATE77 | 000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100000
+                iSTATE75 | 000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100001
+                iSTATE71 | 000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100010
+                iSTATE69 | 000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100011
+                iSTATE53 | 000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100100
+                iSTATE52 | 000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100101
+                iSTATE50 | 000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100110
+                iSTATE48 | 000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10100111
+                 iSTATE8 | 000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10101000
+                 iSTATE6 | 000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         10101001
+                iSTATE33 | 000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00101011
+                iSTATE20 | 000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00101100
+                iSTATE19 | 000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00101101
+                iSTATE15 | 000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00101110
+                iSTATE13 | 000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00101111
+                iSTATE44 | 000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00110000
+                iSTATE41 | 000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00110001
+                iSTATE38 | 000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00110010
+                iSTATE35 | 000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00110011
+                iSTATE27 | 000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00110100
+                iSTATE25 | 000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00110101
+                iSTATE23 | 000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00110110
+                iSTATE21 | 000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00110111
+               iSTATE148 | 000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00111000
+               iSTATE147 | 000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00111001
+               iSTATE146 | 000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00111010
+               iSTATE145 | 000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00111011
+               iSTATE137 | 000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00111100
+               iSTATE136 | 000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00111101
+               iSTATE135 | 000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00111110
+               iSTATE134 | 000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         00111111
+               iSTATE156 | 000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01000000
+               iSTATE154 | 000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01000001
+               iSTATE152 | 000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01000010
+               iSTATE150 | 000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01000011
+               iSTATE144 | 000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01000100
+               iSTATE142 | 000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01000101
+               iSTATE140 | 000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01000110
+               iSTATE114 | 000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01001011
+               iSTATE108 | 000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01001100
+               iSTATE106 | 000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01001101
+               iSTATE104 | 000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01001110
+               iSTATE102 | 000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01001111
+               iSTATE121 | 000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01010000
+               iSTATE119 | 000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01010001
+               iSTATE116 | 001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01010010
+               iSTATE115 | 010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01010011
+               iSTATE109 | 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 |                         01010111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'TEMP_Transmit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 850.816 ; gain = 531.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 180 (col length:80)
+BRAMs: 210 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "data60" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CVM_Clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "startdelay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "startdelay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CVM_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CVM_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter_delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter_delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spistarttrigr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spistarttrigr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SPI_FSM_Clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TEMP_Clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spistarttrig0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "data60" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ClockGenerator1/ILA_Clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CVM_Clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "startdelay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CVM_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CVM_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter_delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spistarttrigr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spistarttrigr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SPI_FSM_Clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TEMP_Clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spistarttrig0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design BTPipeExample has port ADT7420_A0 driven by constant 0
+WARNING: [Synth 8-3917] design BTPipeExample has port ADT7420_A1 driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (l008c72ad3b3ec61be52cde84a395c4fa_reg) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (la85eaf42c58af45585f858cdefb86492_reg) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[10]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[11]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[12]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[13]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[14]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[15]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[16]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[17]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[18]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[19]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[20]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[21]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[22]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[23]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[24]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[25]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[26]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[27]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[28]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[29]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[30]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[31]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[8]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lab8c81cec3709c0416d0acf79f37f087_reg[9]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[0]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[10]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[11]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[12]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[13]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[14]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[15]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[16]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[17]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[18]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[19]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[1]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[20]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[21]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[22]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[23]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[24]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[25]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[26]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[27]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[28]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[29]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[2]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[30]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[31]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[3]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[4]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[5]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[6]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[7]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[8]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[9]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[0]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[10]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[11]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[12]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[13]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[14]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[15]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[16]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[17]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[18]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[19]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[1]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[20]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[21]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[22]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[23]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[24]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[25]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[26]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[27]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[28]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[29]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[2]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[30]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[31]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[3]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[4]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[5]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[6]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[7]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[8]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[9]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lf38b0951701b1c1d5bc7a746e996b3c6_reg) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (hostIF/iob_regs[16].regin0) is unused and will be removed from module BTPipeExample.
+WARNING: [Synth 8-3332] Sequential element (hostIF/iob_regs[17].regin0) is unused and will be removed from module BTPipeExample.
+WARNING: [Synth 8-3332] Sequential element (hostIF/iob_regs[18].regin0) is unused and will be removed from module BTPipeExample.
+WARNING: [Synth 8-3332] Sequential element (hostIF/iob_regs[19].regin0) is unused and will be removed from module BTPipeExample.
+WARNING: [Synth 8-3332] Sequential element (hostIF/iob_regs[20].regin0) is unused and will be removed from module BTPipeExample.
+WARNING: [Synth 8-3332] Sequential element (hostIF/iob_regs[21].regin0) is unused and will be removed from module BTPipeExample.
+WARNING: [Synth 8-3332] Sequential element (hostIF/iob_regs[22].regin0) is unused and will be removed from module BTPipeExample.
+WARNING: [Synth 8-3332] Sequential element (hostIF/iob_regs[23].regin0) is unused and will be removed from module BTPipeExample.
+WARNING: [Synth 8-3332] Sequential element (hostIF/iob_regs[24].regin0) is unused and will be removed from module BTPipeExample.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire20/\wirehold_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire20/\wirehold_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire20/\wirehold_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire20/\wirehold_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire20/\wirehold_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire25/\wirehold_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire20/\wirehold_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire25/\wirehold_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire20/\wirehold_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire25/\wirehold_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire20/\wirehold_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire25/\wirehold_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire20/\wirehold_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire25/\wirehold_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire20/\wirehold_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire25/\wirehold_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire20/\wirehold_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire25/\wirehold_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire21/\wirehold_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire20/\wirehold_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire25/\wirehold_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire24/\wirehold_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire23/\wirehold_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wire22/\wirehold_reg[20] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 850.816 ; gain = 531.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'hostIF/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst' to pin 'hostIF/core0/core0/a0/l62a5479e7989ce7f4d5507c695cc69cf_reg/Q'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:47 . Memory (MB): peak = 850.816 ; gain = 531.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 854.160 ; gain = 535.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 858.820 ; gain = 539.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 858.820 ; gain = 539.930
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 858.820 ; gain = 539.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 858.820 ; gain = 539.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 858.820 ; gain = 539.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 858.820 ; gain = 539.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 858.820 ; gain = 539.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |fifo_generator_0 |         1|
+|2     |ila_0            |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |fifo_generator_0 |     1|
+|2     |ila_0            |     1|
+|3     |BUFG             |     7|
+|4     |CARRY4           |    84|
+|5     |DNA_PORT         |     1|
+|6     |LUT1             |    72|
+|7     |LUT2             |    67|
+|8     |LUT3             |    73|
+|9     |LUT4             |   539|
+|10    |LUT5             |   136|
+|11    |LUT6             |   494|
+|12    |LUT6_2           |    50|
+|13    |MMCME2_BASE      |     1|
+|14    |RAM128X1S        |     8|
+|15    |RAM32M           |     4|
+|16    |RAMB18E1         |     1|
+|17    |RAMB18E1_1       |     1|
+|18    |RAMB36E1         |     1|
+|19    |FDCE             |   159|
+|20    |FDPE             |    37|
+|21    |FDRE             |  1024|
+|22    |FDSE             |     8|
+|23    |IBUF             |    18|
+|24    |IBUFG            |     1|
+|25    |IBUFGDS          |     1|
+|26    |IOBUF            |    34|
+|27    |OBUF             |    18|
+|28    |OBUFT            |     2|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:50 . Memory (MB): peak = 858.820 ; gain = 539.930
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 691 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:40 . Memory (MB): peak = 858.820 ; gain = 194.887
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 858.820 ; gain = 539.930
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 186 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 858.820 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 99 instances were transformed.
+  IBUFG => IBUF: 1 instances
+  IBUFGDS => IBUFDS: 1 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 34 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 8 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+386 Infos, 317 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:53 . Memory (MB): peak = 858.820 ; gain = 541.652
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 858.820 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'U:/Desktop/ECE437SP20200/Final Project/lab8.runs/synth_1/BTPipeExample.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file BTPipeExample_utilization_synth.rpt -pb BTPipeExample_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 11 22:32:40 2020...

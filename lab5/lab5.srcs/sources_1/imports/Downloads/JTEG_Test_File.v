@@ -26,9 +26,10 @@ module JTEG_Test_File(
     wire [7:0] LSB_BYTE;
     wire [15:0] Final_Temp;
     wire [12:0] Temptopython;
-    assign Final_Temp = {000,MSB_BYTE,LSB_BYTE[7],LSB_BYTE[6],LSB_BYTE[5],LSB_BYTE[4], LSB_BYTE[3]};
+    wire starttempsig;
+    assign Final_Temp = {3'b000,MSB_BYTE,LSB_BYTE[7],LSB_BYTE[6],LSB_BYTE[5], LSB_BYTE[4], LSB_BYTE[3]};
     
-    assign TrigerEvent = button[3];
+    assign TrigerEvent = starttempsig;
 
     //Instantiate the module that we like to test
     I2C_Transmit I2C_Test1 (
@@ -47,14 +48,15 @@ module JTEG_Test_File(
         .SDA(SDA),
         .CURR_STATE(CURR_STATE),
         .Temp_MSByte(MSB_BYTE),
-        .Temp_LSByte(LSB_BYTE)
+        .Temp_LSByte(LSB_BYTE),
+        .starttempsig(starttempsig)
         );
     
     //Instantiate the ILA module
     ila_0 ila_sample12 ( 
         .clk(ILA_Clk),
         .probe0({led, SDA, SCL, ACK_bit}),                             
-        .probe1({FSM_Clk, TrigerEvent}),
+        .probe1({FSM_Clk, starttempsig}),
         .probe2(CURR_STATE),
         .probe3(MSB_BYTE),
         .probe4(LSB_BYTE),
@@ -85,5 +87,9 @@ module JTEG_Test_File(
                         .okEH(okEHx[ 0*65 +: 65 ]),
                         .ep_addr(8'h20), 
                         .ep_datain(Final_Temp));
+                        
+    okWireIn wire10 (   .okHE(okHE), 	
+                        .ep_addr(8'h00), 	
+                        .ep_dataout(starttempsig));	
     
 endmodule

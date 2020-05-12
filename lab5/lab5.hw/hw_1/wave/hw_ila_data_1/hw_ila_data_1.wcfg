@@ -15,7 +15,7 @@
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="93"></ValueColumnWidth>
+      <ValueColumnWidth column_width="89"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="15" />
    <wave_markers>
@@ -78,46 +78,25 @@
    </wvobject>
    <wvobject fp_name="MSB_BYTE" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">MSB_BYTE[7:0]</obj_property>
-      <obj_property name="ObjectShortName">MSB_BYTE[7:0]</obj_property>
+      <obj_property name="ElementShortName">MSB_BYTE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">MSB_BYTE[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="LSB_BYTE" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">LSB_BYTE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">LSB_BYTE[7:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject fp_name="LSB_BYTE" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">LSB_BYTE[7:3]</obj_property>
-      <obj_property name="ObjectShortName">LSB_BYTE[7:3]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="&lt;const0&gt;" type="logic">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">&lt;const0&gt;</obj_property>
-      <obj_property name="ObjectShortName">&lt;const0&gt;</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="&lt;const0&gt;_1" type="logic">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">&lt;const0&gt;_1</obj_property>
-      <obj_property name="ObjectShortName">&lt;const0&gt;_1</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="&lt;const0&gt;_2" type="logic">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">&lt;const0&gt;_2</obj_property>
-      <obj_property name="ObjectShortName">&lt;const0&gt;_2</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="LSB_BYTE" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">LSB_BYTE[7:3]</obj_property>
-      <obj_property name="ObjectShortName">LSB_BYTE[7:3]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">LSB_BYTE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">LSB_BYTE[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
@@ -134,6 +113,30 @@
       <obj_property name="ElementShortName">MSB_BYTE_1[7:0]</obj_property>
       <obj_property name="ObjectShortName">MSB_BYTE_1[7:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="LSB_BYTE" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">LSB_BYTE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">LSB_BYTE[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="LSB_BYTE_2" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">LSB_BYTE_2[7:3]</obj_property>
+      <obj_property name="ObjectShortName">LSB_BYTE_2[7:3]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="MSB_BYTE" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">MSB_BYTE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">MSB_BYTE[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>

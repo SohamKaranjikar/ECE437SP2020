@@ -37,6 +37,7 @@ read_verilog -library xil_defaultlib {
   U:/Desktop/ECE437SP20200/lab5/lab5.srcs/sources_1/imports/Downloads/I2C_Transmit.v
   U:/Desktop/ECE437SP20200/lab5/lab5.srcs/sources_1/imports/XEM7310-A75/okCoreHarness.v
   U:/Desktop/ECE437SP20200/lab5/lab5.srcs/sources_1/imports/XEM7310-A75/okLibrary.v
+  U:/Desktop/ECE437SP20200/lab5/lab5.srcs/sources_1/imports/XEM7310-A75/okWireIn.v
   U:/Desktop/ECE437SP20200/lab5/lab5.srcs/sources_1/imports/XEM7310-A75/okWireOut.v
   U:/Desktop/ECE437SP20200/lab5/lab5.srcs/sources_1/imports/Downloads/JTEG_Test_File.v
 }
