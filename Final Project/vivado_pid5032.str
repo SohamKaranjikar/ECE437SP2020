@@ -1,0 +1,882 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 5032
+License: Customer
+
+Current time: 	Fri Mar 27 03:12:38 CDT 2020
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1200
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 691 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	sohammk2
+User home directory: C:/Users/sohammk2
+User working directory: C:/temp/lab8
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/sohammk2/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/sohammk2/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/sohammk2/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/temp/lab8/vivado.log
+Vivado journal file location: 	C:/temp/lab8/vivado.jou
+Engine tmp dir: 	C:/temp/lab8/.Xil/Vivado-5032-ECEB-4022-02
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 670 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 91 MB (+92861kb) [00:00:06]
+// [Engine Memory]: 574 MB (+449890kb) [00:00:06]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\temp\lab8\lab8.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/temp/lab8/lab8.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 674 MB. GUI used memory: 49 MB. Current time: 3/27/20, 3:12:40 AM CDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 97 MB (+1285kb) [00:00:13]
+// [Engine Memory]: 748 MB (+152619kb) [00:00:13]
+// [GUI Memory]: 107 MB (+5309kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  3038 ms.
+// Tcl Message: open_project C:/temp/lab8/lab8.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'U:/Desktop/ECE437SP20200/lab8' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// [Engine Memory]: 793 MB (+8422kb) [00:00:16]
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 801.070 ; gain = 195.676 
+// Project name: lab8; location: C:/temp/lab8; part: xc7a75tfgg484-1
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_NO, "No"); // a (A)
+dismissDialog("No Implementation Results Available"); // A (cp)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Mar 27 03:13:10 2020] Launched synth_1... Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log [Fri Mar 27 03:13:10 2020] Launched impl_1... Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aI (aF, cp)
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BTPipeExample (BTPipeExample.v)]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BTPipeExample (BTPipeExample.v)]", 1); // B (D, cp)
+// [GUI Memory]: 118 MB (+5982kb) [00:01:02]
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, ila_0_synth_1]", 8); // ah (Q, cp)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs]", 7); // ah (Q, cp)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 59 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aI (aF, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BTPipeExample (BTPipeExample.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BTPipeExample (BTPipeExample.v), hostIF : okHost (okLibrary.v)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 820 MB. GUI used memory: 59 MB. Current time: 3/27/20, 3:14:55 AM CDT
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 283 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// Elapsed time: 176 seconds
+selectCodeEditor("BTPipeExample.v", 368, 466); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 305, 464); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 311, 446); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 514, 449); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 514, 449, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 514, 449); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 515, 451); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Mar 27 03:23:02 2020] Launched synth_1... Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log [Fri Mar 27 03:23:02 2020] Launched impl_1... Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 65 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aI (aF, cp)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 73 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BTPipeExample (BTPipeExample.v), FIFO_for_Counter_BTPipe_Interface : fifo_generator_0 (fifo_generator_0.xci)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BTPipeExample (BTPipeExample.v), FIFO_for_Counter_BTPipe_Interface : fifo_generator_0 (fifo_generator_0.xci)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// r (cp): Re-customize IP: addNotify
+// [GUI Memory]: 127 MB (+3595kb) [00:12:54]
+// [Engine Memory]: 852 MB (+20289kb) [00:12:54]
+// WARNING: HEventQueue.dispatchEvent() is taking  2287 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 854 MB. GUI used memory: 75 MB. Current time: 3/27/20, 3:25:25 AM CDT
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Status Flags", 2); // bg (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // bg (C, r)
+// [GUI Memory]: 135 MB (+1250kb) [00:13:57]
+// Elapsed time: 60 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Status Flags", 2); // bg (C, r)
+// Elapsed time: 21 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // bg (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Data Counts", 3); // bg (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bg (C, r)
+// TclEventType: RUN_COMPLETED
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// ah (cp): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// Elapsed time: 72 seconds
+selectCodeEditor("BTPipeExample.v", 322, 227); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 310, 227); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 274, 233); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 137, 247); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 137, 62); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 133, 181); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 305, 160); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 136, 184); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 166, 217); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Mar 27 03:29:01 2020] Launched synth_1... Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log [Fri Mar 27 03:29:01 2020] Launched impl_1... Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log 
+// Elapsed time: 43 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aI (aF, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 188 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// Elapsed time: 73 seconds
+selectCodeEditor("BTPipeExample.v", 187, 503); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cvm_4pixels"); // l (aT, cp)
+selectCodeEditor("BTPipeExample.v", 134, 490); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Mar 27 03:34:53 2020] Launched synth_1... Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log [Fri Mar 27 03:34:53 2020] Launched impl_1... Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cp): Implementation Failed: addNotify
+// Elapsed time: 147 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cp)
+// Elapsed time: 14 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Common 17-1548] Command failed: can't read wr_clk_period: no such variable.  [c:/temp/lab8/lab8.runs/impl_1/.Xil/Vivado-5716-ECEB-4022-02/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:12]. ]", 4); // ah (Q, cp)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Common 17-1548] Command failed: can't read wr_clk_period: no such variable.  [c:/temp/lab8/lab8.runs/impl_1/.Xil/Vivado-5716-ECEB-4022-02/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:12]. ]", 4); // ah (Q, cp)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/temp/lab8/lab8.srcs/constrs_1/imports/Downloads/xem7310_v1.xdc:102]. ]", 2); // ah (Q, cp)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Common 17-55] 'get_property' expects at least one object. [c:/temp/lab8/lab8.runs/impl_1/.Xil/Vivado-5716-ECEB-4022-02/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:10]. ]", 104); // ah (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Reset to Previous Step : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// f (cp): Launch Runs: addNotify
+dismissDialog("Reset to Previous Step"); // bx (cp)
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 19 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Mar 27 03:38:14 2020] Launched impl_1... Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log 
+// Elapsed time: 144 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aI (aF, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 12 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// Elapsed time: 154 seconds
+selectCodeEditor("BTPipeExample.v", 197, 585); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 197, 585, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("BTPipeExample.v", 211, 285); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 211, 285, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 148, 213); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 182, 214); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 182, 214, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 133, 211); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+// Elapsed time: 15 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_enable"); // l (aT, cp)
+selectCodeEditor("BTPipeExample.v", 214, 273); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("BTPipeExample.v", 146, 409); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 160, 405); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 154, 309); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 158, 126); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 179, 159); // cl (w, cp)
+// Elapsed time: 184 seconds
+selectCodeEditor("BTPipeExample.v", 329, 249); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 334, 249); // cl (w, cp)
+// Elapsed time: 18 seconds
+typeControlKey((HResource) null, "BTPipeExample.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("BTPipeExample.v", 323, 582); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 323, 582, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 374, 583); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 415, 582); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 374, 583); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 326, 583); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 377, 583); // cl (w, cp)
+typeControlKey((HResource) null, "BTPipeExample.v", 'c'); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 335, 315); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 301, 315); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 304, 315); // cl (w, cp)
+typeControlKey((HResource) null, "BTPipeExample.v", 'v'); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 301, 313); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar 27 03:48:52 2020] Launched synth_1... Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log [Fri Mar 27 03:48:52 2020] Launched impl_1... Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 874 MB. GUI used memory: 74 MB. Current time: 3/27/20, 3:51:06 AM CDT
+// Elapsed time: 171 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aI (aF, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 66 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// Elapsed time: 84 seconds
+selectCodeEditor("BTPipeExample.v", 193, 301); // cl (w, cp)
+typeControlKey((HResource) null, "BTPipeExample.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "BTPipeExample.v", 'c'); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 370, 315); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 373, 315); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 304, 315); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 392, 316); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 376, 316); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 398, 315); // cl (w, cp)
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "BTPipeExample.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("BTPipeExample.v", 485, 450); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("BTPipeExample.v", 256, 210); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 289, 250); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 71, 237); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 6 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Mar 27 03:55:30 2020] Launched synth_1... Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log [Fri Mar 27 03:55:30 2020] Launched impl_1... Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 118 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aI (aF, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 110 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// Elapsed time: 98 seconds
+selectCodeEditor("BTPipeExample.v", 376, 432); // cl (w, cp)
+typeControlKey((HResource) null, "BTPipeExample.v", 'c'); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 302, 163); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 449, 166); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 473, 165); // cl (w, cp)
+typeControlKey((HResource) null, "BTPipeExample.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("BTPipeExample.v", 436, 435); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 320, 412); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 275, 412); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 275, 412, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 148, 403); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 169, 348); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 160, 354); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 160, 354, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 160, 358); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 160, 363); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 160, 363, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 151, 274); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 151, 274, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 151, 274); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 140, 240); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 140, 240, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 163, 241); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 163, 241, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 163, 241); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 97, 244); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 97, 244, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 116, 457); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 116, 457, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 116, 453); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 116, 453); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 143, 429); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 143, 429, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 143, 429); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 149, 399); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 149, 399, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 146, 414); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 146, 414, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 146, 414); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 146, 403); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 146, 403, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 143, 411); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 143, 405); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 143, 405, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 143, 403); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 143, 403); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 143, 403); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 145, 343); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 145, 343, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 143, 349); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 143, 349, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 142, 354); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 142, 354, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 142, 354); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 140, 364); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 140, 364, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 140, 364); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 148, 343); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 148, 343, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 148, 343); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 148, 328); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 148, 328, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 148, 328); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 148, 315); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 148, 315, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 148, 315); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 137, 276); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 137, 276, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 137, 276); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 143, 247); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 143, 255); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 143, 255, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 143, 255); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 143, 246); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 143, 246, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 143, 246); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 143, 232); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 143, 232, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 143, 232); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 115, 189); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 115, 189, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 115, 189); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 139, 172); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 139, 172, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 139, 172); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 139, 156); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 139, 156, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 139, 156); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 139, 145); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 139, 145, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 139, 145); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 139, 136); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 139, 132, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 139, 132); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 133, 85); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 133, 85, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 133, 85); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 133, 76); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 133, 76, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 133, 76); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 134, 64); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 134, 64, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 134, 64); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 134, 49); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 134, 49, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 134, 49); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 134, 49); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 121, 24); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 121, 24, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 121, 24); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 101, 151); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 101, 151, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 109, 142); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 109, 142, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 112, 142); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 112, 142, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 112, 142); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 125, 123); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 125, 123, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 125, 123); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 124, 99); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 124, 99, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 124, 102); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 124, 102); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 124, 99); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 124, 99); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 124, 93); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 124, 93, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 124, 93); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 124, 93, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 124, 93); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 106, 157); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 106, 157, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 106, 157); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 106, 157, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 106, 157); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 106, 157, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 106, 157); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 106, 157, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 106, 157); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 106, 157, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 106, 157); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 106, 157, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 106, 157); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 106, 157, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 106, 157); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 139, 141); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 139, 141, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 139, 141); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 140, 105); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 136, 133); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 136, 133, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 136, 133); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 136, 109); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 136, 109, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 136, 109); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 136, 109); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 136, 105); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 136, 99); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 136, 99, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 136, 99); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 121, 51); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 121, 51, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 121, 51); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 139, 192); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 139, 192, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 139, 192); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 181, 151); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 181, 186); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 181, 186, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 181, 186); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 188, 162); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 188, 162, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 188, 162); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 199, 138); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 199, 138, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 199, 138); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 206, 108); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 199, 135); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 199, 135, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 199, 135); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 206, 100); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 206, 100, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 206, 100); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 214, 106); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 214, 106, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 214, 106); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 166, 91); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 166, 91, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 166, 91); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 166, 91); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 167, 60); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 167, 60, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 166, 70); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 166, 70, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 166, 70); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 166, 43); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 166, 43, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 166, 43); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 166, 43, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 166, 43); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 166, 43, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 166, 43); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 122, 159); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 122, 186); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 122, 186, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 122, 186); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 170, 159); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 170, 159, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 170, 159); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 175, 141); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 175, 141, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 175, 141); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 173, 115); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 164, 130); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 164, 130, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 164, 130); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 164, 112); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 164, 112, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 164, 112); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 181, 81); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 181, 87); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 181, 87, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 181, 87); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 211, 73); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 211, 73, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 211, 73); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 217, 55); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 217, 55, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 217, 55); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 226, 36); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 226, 36, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 253, 43); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 253, 43, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("BTPipeExample.v", 253, 43); // cl (w, cp)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aI (aF, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectCheckBox(PAResourceItoN.LaunchPanel_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g (a, f): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectCheckBox(PAResourceItoN.LaunchPanel_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (a, f): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: [Fri Mar 27 04:03:23 2020] Launched synth_1... Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log [Fri Mar 27 04:03:23 2020] Launched impl_1... Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 249 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("BTPipeExample.v", 254, 450); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("BTPipeExample.v", 137, 285); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 137, 285, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "BTPipeExample.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "BTPipeExample.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "BTPipeExample.v", 'c'); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("BTPipeExample.v", 302, 303); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 302, 303, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "BTPipeExample.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 222 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Mar 27 04:12:28 2020] Launched synth_1... Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log [Fri Mar 27 04:12:28 2020] Launched impl_1... Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 470 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 876 MB. GUI used memory: 72 MB. Current time: 3/27/20, 4:21:06 AM CDT
+// Elapsed time: 116 seconds
+selectCodeEditor("BTPipeExample.v", 317, 193); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 332, 198); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 346, 199); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 337, 199); // cl (w, cp)
+// Elapsed time: 15 seconds
+typeControlKey((HResource) null, "BTPipeExample.v", 'c'); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 398, 403, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectCodeEditor("BTPipeExample.v", 313, 400, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectCodeEditor("BTPipeExample.v", 293, 400); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 310, 393); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 307, 400); // cl (w, cp)
+typeControlKey((HResource) null, "BTPipeExample.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("BTPipeExample.v", 539, 447); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("BTPipeExample.v", 205, 289); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("BTPipeExample.v", 121, 112); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 217, 306); // cl (w, cp)
+// Elapsed time: 291 seconds
+selectCodeEditor("BTPipeExample.v", 356, 345); // cl (w, cp)
+// Elapsed time: 95 seconds
+selectCodeEditor("BTPipeExample.v", 364, 132); // cl (w, cp)
+selectCodeEditor("BTPipeExample.v", 364, 145); // cl (w, cp)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1250 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1417 ms. Increasing delay to 4251 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2475 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2560 ms. Increasing delay to 7680 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 876 MB. GUI used memory: 72 MB. Current time: 3/27/20, 4:51:06 AM CDT
+// Elapsed time: 1364 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Mar 27 04:53:15 2020] Launched synth_1... Run output will be captured here: C:/temp/lab8/lab8.runs/synth_1/runme.log [Fri Mar 27 04:53:15 2020] Launched impl_1... Run output will be captured here: C:/temp/lab8/lab8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 276 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)

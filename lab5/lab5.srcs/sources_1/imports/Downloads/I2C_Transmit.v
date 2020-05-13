@@ -16,7 +16,8 @@ module I2C_Transmit(
     output reg SDA,
     output [7:0] CURR_STATE,
     output reg [7:0] Temp_MSByte,
-    output reg [7:0] Temp_LSByte
+    output reg [7:0] Temp_LSByte,
+    input starttempsig
     );
     
     //Instantiate the ClockGenerator module, where three signals are generate:
@@ -74,7 +75,7 @@ module I2C_Transmit(
         case (State)
             // Press Button[3] to start the state machine. Otherwise, stay in the STATE_INIT state        
             STATE_INIT : begin
-                 if (button_reg[3] == 1'b1) State <= 8'd1;                    
+                 if (starttempsig == 1'b1) State <= 8'd1;                    
                  else begin                 
                       SCL <= 1'b1;
                       SDA <= 1'b1;
@@ -796,7 +797,7 @@ module I2C_Transmit(
             8'd128 : begin
                   SCL <= 1'b1;
                   SDA <= 1'b1;
-                  State <= 1'd1;;                 
+                  State <= 1'd1;                 
             end   
             
             //Read LSB.

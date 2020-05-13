@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a75tfgg484-1" LaunchTime="1582644656">
+<GenRun Id="synth_1" LaunchPart="xc7a75tfgg484-1" LaunchTime="1588717398">
   <File Type="PA-TCL" Name="JTEG_Test_File.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="JTEG_Test_File_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="JTEG_Test_File_reports.tcl"/>
@@ -47,6 +47,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okWireIn.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okWireIn.v"/>
+        <Attr Name="ImportTime" Val="1525201188"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okWireOut.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okWireOut.v"/>
@@ -88,16 +97,6 @@
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okPipeOut.v"/>
-        <Attr Name="ImportTime" Val="1525201188"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/XEM7310-A75/okWireIn.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="C:/Program Files/Opal Kelly/FrontPanelUSB/FrontPanelHDL/XEM7310-A75/okWireIn.v"/>
         <Attr Name="ImportTime" Val="1525201188"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
