@@ -163,28 +163,24 @@ buf12 = buf12.reshape(648*486)
 
 
 #reading temp:
-
+global count,average
+count = 0
+print(dev.SetWireInValue(0x07,1))
+dev.UpdateWireIns()
+time.sleep(.01)
 def readTemp():
-    count = 0
-    print(dev.SetWireInValue(0x07,1))
-    dev.UpdateWireIns()
-    time.sleep(.01)
-    while(1):
-        dev.UpdateWireOuts()
-       # print(dev.GetWireOutValue(0x20))  # Transfer the recived data in result_sum variable
-        # convert number into binary first
-        if(abc != 99):
-            Final_Temp = dev.GetWireOutValue(0x25)
-        else:
-            Final_Temp = 22.2
-        if((float(Final_Temp)/128.0) == 0.0):
-            continue
-        elif(count == 0):
-            average = (float(Final_Temp)/16.0)
-            count = count + 1;
-        else:
-            None
-#            print("The Temperature is: "+str((average+(float(Final_Temp)/16.0))/2));
+    global count,average
+    dev.UpdateWireOuts()
+   # print(dev.GetWireOutValue(0x20))  # Transfer the recived data in result_sum variable
+    # convert number into binary first
+    Final_Temp = dev.GetWireOutValue(0x25)
+    if((float(Final_Temp)/128.0) == 0.0):
+        return
+    elif(count == 0):
+        average = (float(Final_Temp)/16.0)
+        count = count + 1;
+    else:
+        print("The Temperature is: "+str((average+(float(Final_Temp)/16.0))/2));
 
 	
 # Create a Thread with a function without any arguments
@@ -198,14 +194,26 @@ def updateImage():
     dev.UpdateWireIns()
     dev.SetWireInValue(0x06, 0)
     dev.UpdateWireIns()
-    print("start")
-    abc = 99
-    print("done: "+str(dev.ReadFromBlockPipeOut(0xa0, 1024, buf))) 
-    abc = 0
+    #print("start")
+#    dev.ReadFromBlockPipeOut(0xa0, 1024, buf)
+    print("done: "+str(dev.ReadFromBlockPipeOut(0xa0, 1024, buf)))
     buf12 = buf[0:314928]
-    buf12 = buf12.reshape(486,648)
-    array = np.array(buf12, dtype=np.uint8)
-    return array
+#    buf13 = np.arange(314928).astype('uint8')
+#    for i in range(0,314928,4):
+#        buf13[i] = buf12[i+3]
+#        buf13[i+1] = buf12[i+2]
+#        buf13[i+2] = buf12[i+1]
+#        buf13[i+3] = buf12[i]
+#    buf13 = buf13.reshape(486,648)
+    readTemp()
+    readTemp()
+    readTemp()
+    readTemp()
+    readTemp()
+    readTemp()
+    readTemp()
+    readTemp()
+    return buf12.reshape(486,648)
     
 #    imgplot.set_data(array)
 #    return imgplot
@@ -216,6 +224,9 @@ print(time.time())
 while True:
     array = updateImage()
     framecount += 1
+#    if(framecount == 20):
+#        print(time.time())
+#        break
     cv2.imshow('test',array)
     cv2.waitKey(1)
         

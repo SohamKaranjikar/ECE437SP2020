@@ -82,7 +82,7 @@ module BTPipeExample(
     //High speed CLK signal, Low speed FSM_Clk signal     	
     wire [23:0] ClkDivThreshold = 2;	
     wire [23:0] ClkDivThresholdSPI = 5;  	
-    wire [23:0] ClkDivThresholdCVM = 5;
+    wire [23:0] ClkDivThresholdCVM = 1;
     wire [23:0] ClkDivThresholdTEMP = 9;   	
     reg [23:0] ClkDivSPI = 24'd0;	
     reg [23:0] ClkDivCVM = 24'd0;    
